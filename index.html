@@ -1,55 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Wattical Evaris Tech GmbH - Empowering Global Automotive Innovation">
     <meta name="theme-color" content="#1C283D">
+    <link rel="stylesheet" href="./base.css">
     <title>Wattical Evaris Tech GmbH</title>
     <style>
-        :root {
-            --primary-color: #1C283D;
-            --secondary-color: #FF4029;
-            --background-color: #E9EBF0;
-            --text-color: #A0AFBA;
-            --divider-color: #59687A;
-            --white: #fff;
-            --black: #00060D;
-            --font-primary: Verdana, Arial, sans-serif;
-            --transition-default: 0.3s ease;
-            --max-width-desktop: 1720px;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: var(--font-primary);
-            line-height: 1.5;
-            color: var(--primary-color);
-            overflow-x: hidden;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        button {
-            cursor: pointer;
-            border: none;
-            background: none;
-            font: inherit;
-        }
-
         .visually-hidden {
             position: absolute;
             width: 1px;
@@ -84,94 +43,6 @@
             width: 100%;
             object-fit: cover;
             z-index: 0;
-        }
-
-        .nav-container {
-            position: relative;
-            background-color: rgba(0, 6, 13, 0.9);
-            width: 100%;
-            z-index: 10;
-        }
-
-        .nav-content {
-            display: flex;
-            width: 100%;
-            max-width: var(--max-width-desktop);
-            margin: 0 auto;
-            padding: 1rem 2rem;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo-wrapper {
-            display: flex;
-            gap: 2rem;
-            align-items: center;
-        }
-
-        .company-logo {
-            height: 3rem;
-            width: auto;
-        }
-
-        .nav-divider {
-            background-color: var(--divider-color);
-            width: 1px;
-            height: 5rem;
-            display: block;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 2.5rem;
-            align-items: center;
-        }
-
-        .nav-item {
-            display: flex;
-            gap: 2.5rem;
-            align-items: center;
-        }
-
-        .nav-link {
-            color: var(--white);
-            text-decoration: none;
-            font-size: 0.875rem;
-            font-weight: 700;
-            transition: opacity var(--transition-default);
-        }
-
-        .nav-link:hover,
-        .nav-link:focus {
-            opacity: 0.8;
-            outline: none;
-        }
-
-        .nav-link:focus-visible {
-            outline: 2px solid var(--white);
-            outline-offset: 4px;
-        }
-
-        .dropdown-icon {
-            width: 0.75rem;
-            height: auto;
-        }
-
-        .language-selector {
-            width: 5rem;
-            height: 5rem;
-            padding: 0.5rem;
-            transition: opacity var(--transition-default);
-        }
-
-        .language-selector:hover,
-        .language-selector:focus {
-            opacity: 0.8;
-        }
-
-        .language-selector:focus-visible {
-            outline: 2px solid var(--white);
-            outline-offset: 4px;
         }
 
         .hero-content {
@@ -310,7 +181,7 @@
         }
 
         .footer-content {
-            max-width: var(--max-width-desktop);
+            width: 100%;
             margin: 0 auto;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -351,112 +222,19 @@
             font-size: 0.875rem;
             margin-top: 3rem;
         }
-
-        @media (max-width: 64em) {
-            .hero-content {
-                margin: auto 2rem 4rem;
-            }
-
-            .about-section {
-                grid-template-columns: 1fr;
-                padding: 4rem 2rem;
-            }
-
-            .contact-section {
-                padding: 4rem 2rem;
-            }
-
-            .footer {
-                padding: 4rem 2rem;
-            }
-
-            .footer-content {
-                grid-template-columns: 1fr;
-                gap: 3rem;
-            }
-        }
-
-        @media (max-width: 48em) {
-            .nav-content {
-                flex-direction: column;
-                gap: 1rem;
-            }
-
-            .nav-links {
-                flex-direction: column;
-                width: 100%;
-            }
-
-            .nav-item {
-                flex-direction: column;
-                width: 100%;
-            }
-
-            .hero-title {
-                font-size: 2rem;
-            }
-
-            .about-title {
-                font-size: 2.5rem;
-            }
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-            html {
-                scroll-behavior: auto;
-            }
-
-            *,
-            *::before,
-            *::after {
-                animation-duration: 0.01ms !important;
-                animation-iteration-count: 1 !important;
-                transition-duration: 0.01ms !important;
-                scroll-behavior: auto !important;
-            }
-        }
     </style>
 </head>
+
 <body>
+    <iframe id="nav" src="./nav.html" frameborder="0"></iframe>
     <main id="main" class="landing-wrapper">
         <section class="hero-section">
-            <img src="https://cdn.builder.io/api/v1/image/assets/b08d01e48bf8433798a20bf513329c2c/e760a97e9947aa3ef8165f27c979f03e8975b9ffd65a2b8990559fb9c7aed225?apiKey=b08d01e48bf8433798a20bf513329c2c&" alt="" class="hero-background" aria-hidden="true" />
-            
-            <nav class="nav-container" aria-label="Main navigation">
-                <div class="nav-content">
-                    <div class="logo-wrapper">
-                        <img src="https://cdn.builder.io/api/v1/image/assets/b08d01e48bf8433798a20bf513329c2c/cc4b963f5896bcdeb2412f1d3e878bdb6c7bff381a101c6cdeee75c01b68b9e1?apiKey=b08d01e48bf8433798a20bf513329c2c&" alt="Wattical Evaris Tech Logo" class="company-logo" />
-                        <span class="nav-divider" aria-hidden="true"></span>
-                    </div>
-                    
-                    <div class="nav-links">
-                        <div class="nav-item">
-                            <span class="nav-divider" aria-hidden="true"></span>
-                            <a href="#about" class="nav-link">About us</a>
-                            <span class="nav-divider" aria-hidden="true"></span>
-                        </div>
-                        
-                        <div class="nav-item">
-                            <a href="#solutions" class="nav-link">Solutions</a>
-                            <img src="https://cdn.builder.io/api/v1/image/assets/b08d01e48bf8433798a20bf513329c2c/f5734b8ce39b24d2edcfd4789055a61828de0cef07c85a8c23b35fb38b2d05e2?apiKey=b08d01e48bf8433798a20bf513329c2c&" alt="" class="dropdown-icon" aria-hidden="true" />
-                        </div>
-                        
-                        <div class="nav-item">
-                            <span class="nav-divider" aria-hidden="true"></span>
-                            <a href="#career" class="nav-link">Career</a>
-                            <span class="nav-divider" aria-hidden="true"></span>
-                            <a href="#contact" class="nav-link">Contact</a>
-                            <button type="button" class="language-selector" aria-label="Change language">
-                                <img src="https://cdn.builder.io/api/v1/image/assets/b08d01e48bf8433798a20bf513329c2c/fa64ad1bc28116211d7ef265d04d86d78285abbeb7c63ecd598045cc690be85c?apiKey=b08d01e48bf8433798a20bf513329c2c&" alt="" aria-hidden="true" />
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-
+            <img src="https://cdn.builder.io/api/v1/image/assets/b08d01e48bf8433798a20bf513329c2c/e760a97e9947aa3ef8165f27c979f03e8975b9ffd65a2b8990559fb9c7aed225?apiKey=b08d01e48bf8433798a20bf513329c2c&"
+                alt="" class="hero-background" aria-hidden="true" />
             <div class="hero-content">
                 <h1 class="hero-title">Empowering Global Automotive Innovation</h1>
-                <p class="hero-text">Providing Seamless Localization, Compliance, and Market Expansion Services for the European Market</p>
+                <p class="hero-text">Providing Seamless Localization, Compliance, and Market Expansion Services for the
+                    European Market</p>
                 <p class="hero-text">Driving Your Success in Europe with Expertise and Innovation</p>
             </div>
         </section>
@@ -465,16 +243,19 @@
             <div class="about-content">
                 <h2 id="about-title" class="about-title">About Us</h2>
                 <p class="about-text">
-                    Wattical Evaris Tech GmbH was established in September 2024 and is located in Frankfurt, Germany. 
-                    We are dedicated to providing localization support and market expansion services for global automotive 
-                    companies entering the European market. Leveraging extensive local resources and expertise, we help 
+                    Wattical Evaris Tech GmbH was established in September 2024 and is located in Frankfurt, Germany.
+                    We are dedicated to providing localization support and market expansion services for global
+                    automotive
+                    companies entering the European market. Leveraging extensive local resources and expertise, we help
                     businesses achieve success in the European market.
                 </p>
-                <img src="https://cdn.builder.io/api/v1/image/assets/b08d01e48bf8433798a20bf513329c2c/3d6ffbe8ad4748fcd6b8480383aed0f99f75d6f03929c873fff959649c9f1d03?apiKey=b08d01e48bf8433798a20bf513329c2c&" alt="Wattical Evaris Tech Logo" class="about-logo" />
+                <img src="https://cdn.builder.io/api/v1/image/assets/b08d01e48bf8433798a20bf513329c2c/3d6ffbe8ad4748fcd6b8480383aed0f99f75d6f03929c873fff959649c9f1d03?apiKey=b08d01e48bf8433798a20bf513329c2c&"
+                    alt="Wattical Evaris Tech Logo" class="about-logo" />
             </div>
-            
+
             <div class="about-image-wrapper">
-                <img src="https://cdn.builder.io/api/v1/image/assets/b08d01e48bf8433798a20bf513329c2c/a7541154729fe86f874e98e8fb5280778a7a0e38f2d05874ce5a8acf7663c85b?apiKey=b08d01e48bf8433798a20bf513329c2c&" alt="Our office in Frankfurt" class="about-photo" />
+                <img src="https://cdn.builder.io/api/v1/image/assets/b08d01e48bf8433798a20bf513329c2c/a7541154729fe86f874e98e8fb5280778a7a0e38f2d05874ce5a8acf7663c85b?apiKey=b08d01e48bf8433798a20bf513329c2c&"
+                    alt="Our office in Frankfurt" class="about-photo" />
             </div>
         </section>
 
@@ -503,7 +284,8 @@
 
                 <div class="form-group">
                     <label for="message" class="form-label">Message <span aria-label="required">*</span></label>
-                    <textarea id="message" name="message" class="form-textarea" required aria-required="true"></textarea>
+                    <textarea id="message" name="message" class="form-textarea" required
+                        aria-required="true"></textarea>
                 </div>
 
                 <button type="submit" class="submit-button">Send</button>
@@ -512,8 +294,9 @@
 
         <footer class="footer">
             <div class="footer-content">
-                <img src="https://cdn.builder.io/api/v1/image/assets/b08d01e48bf8433798a20bf513329c2c/3c57202c0ea10742e16a7ee3e31a4ee80f95ad919e41820aca9d75b3527586ef?apiKey=b08d01e48bf8433798a20bf513329c2c&" alt="Wattical Evaris Tech Logo" class="footer-logo" />
-                
+                <img src="https://cdn.builder.io/api/v1/image/assets/b08d01e48bf8433798a20bf513329c2c/3c57202c0ea10742e16a7ee3e31a4ee80f95ad919e41820aca9d75b3527586ef?apiKey=b08d01e48bf8433798a20bf513329c2c&"
+                    alt="Wattical Evaris Tech Logo" class="footer-logo" />
+
                 <nav class="footer-links" aria-label="Footer navigation">
                     <a href="#" class="footer-link">Start</a>
                     <a href="#solutions" class="footer-link">Solutions</a>
@@ -521,7 +304,7 @@
                     <a href="#career" class="footer-link">Career</a>
                     <a href="#contact" class="footer-link">Contact</a>
                 </nav>
-                
+
                 <nav class="footer-links" aria-label="Legal navigation">
                     <a href="#" class="footer-link">Imprint</a>
                     <a href="#" class="footer-link">Data protection</a>
@@ -534,4 +317,5 @@
         </footer>
     </main>
 </body>
+
 </html>

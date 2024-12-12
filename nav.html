@@ -1,0 +1,68 @@
+<link rel="stylesheet" href="./base.css">
+<style>
+    nav {
+        background-color: rgba(0, 6, 13, 0.9);
+        height: 80px;
+        width: 100%;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: stretch;
+        border-bottom: 1px solid var(--divider-color);
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        padding-left: 40px;
+        padding-right: 30px;
+        border-right: 1px solid var(--divider-color);
+    }
+
+    .logo img {
+        height: 50px;
+        width: auto;
+    }
+
+    .nav-items {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 160px;
+        border-left: 1px solid var(--divider-color);
+        color: var(--white);
+        text-decoration: none;
+        font-size: 12px;
+    }
+
+    button.nav-item::after {
+        content: url(./images/arrow.svg);
+        width: 1em;
+        height: auto;
+        margin-left: 0.75em;
+    }
+
+    .language-selector {
+        min-width: 100px;
+    }
+</style>
+
+<nav aria-label="Main navigation">
+    <a href="." target="_parent" class="logo">
+        <img src="./images/logo.svg" alt="Wattical Evaris Tech Logo" />
+    </a>
+    <div class="nav-items">
+        <a href="./about.html" target="_parent" class="nav-item">About us</a>
+        <button class="nav-item">Solutions</button>
+        <a href="./career.html" target="_parent" class="nav-item">Career</a>
+        <a href="./contact.html" target="_parent" class="nav-item">Contact</a>
+        <button class="nav-item language-selector" aria-label="Change language">
+            <img src="./images/en.png" alt="EN" />
+        </button>
+    </div>
+</nav>
