@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="./base.css">
+<link rel="stylesheet" href="/base.css">
 <style>
     nav {
         background-color: rgba(0, 6, 13, 0.9);
@@ -46,7 +46,7 @@
     }
 
     button.nav-item::after {
-        content: url(./images/arrow.svg);
+        content: url(/images/arrow.svg);
         width: 1em;
         height: auto;
         margin-left: 0.75em;
@@ -80,6 +80,7 @@
 
     button.nav-item menu li a span {
         display: flex;
+        width: 100%;
         align-items: center;
     }
 
@@ -120,39 +121,40 @@
 <base target="_parent" />
 
 <nav aria-label="Main navigation">
-    <a href="." class="logo">
-        <img src="./images/logo.svg" alt="Wattical Evaris Tech Logo" />
+    <a href="./start.html" class="logo">
+        <img src="/images/logo.svg" alt="Wattical Evaris Tech Logo" />
     </a>
     <div class="nav-items">
-        <a href="./about.html" class="nav-item">About us</a>
+        <a href="./about.html" class="nav-item">关于我们</a>
         <button class="nav-item" id="solutions">
-            Solutions
+            解决方案
             <menu>
                 <li><a href="./solution1.html"><span>
-                            Vehicle Localization Services in Europe
+                            整车欧洲本地化
                         </span></a></li>
                 <li><a href="./solution2.html"><span>
-                            Comprehensive Parts Export Services
+                            零部件出海一体化服务
                         </span></a></li>
                 <li><a href="./solution3.html"><span>
-                            Testing Equipment Services
+                            测试设备
                         </span></a></li>
                 <li><a href="./solution4.html"><span>
-                            European Human Resources Services
+                            欧洲人力资源
                         </span></a></li>
             </menu>
         </button>
-        <a href="./career.html" class="nav-item">Career</a>
-        <a href="./contact.html" class="nav-item">Contact</a>
+        <a href="./career.html" class="nav-item">加入我们</a>
+        <a href="./contact.html" class="nav-item">联系方式</a>
         <button class="nav-item" id="languages" aria-label="Change language">
-            <img src="./images/en.png" alt="EN" />
+            <img src="/images/zh.png" alt="ZH" />
             <menu>
-                <li><a><span><img src="./images/en.png" alt="EN" /></span></a></li>
-                <li><a id="change_language_zh"><span><img src="./images/zh.png" alt="ZH" /></span></a></li>
+                <li><a id="change_language_en"><span><img src="/images/en.png" alt="EN" /></span></a></li>
+                <li><a><span><img src="/images/zh.png" alt="ZH" /></span></a></li>
             </menu>
         </button>
     </div>
 </nav>
 
 <script>
+    document.getElementById('change_language_en').setAttribute('href', window.parent.location.pathname.replace('/zh/', '/en/'));
 </script>
