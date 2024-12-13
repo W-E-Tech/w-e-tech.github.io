@@ -1,133 +1,20 @@
 <link rel="stylesheet" href="/base.css">
-<style>
-    nav {
-        background-color: rgba(0, 6, 13, 0.9);
-        height: 80px;
-        width: 100%;
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        align-items: stretch;
-        border-bottom: 1px solid var(--royal-blue);
-    }
-
-    .logo {
-        display: flex;
-        align-items: center;
-        padding-left: 40px;
-        padding-right: 30px;
-        border-right: 1px solid var(--royal-blue);
-    }
-
-    .logo img {
-        height: 50px;
-        width: auto;
-    }
-
-    .nav-items {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .nav-item {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-width: 160px;
-        border-left: 1px solid var(--royal-blue);
-        color: var(--white);
-        text-decoration: none;
-        font-size: 12px;
-        font-weight: bold;
-    }
-
-    button.nav-item {
-        position: relative;
-    }
-
-    button.nav-item::after {
-        content: url(/images/arrow.svg);
-        width: 1em;
-        height: auto;
-        margin-left: 0.75em;
-    }
-
-    button.nav-item menu {
-        display: none;
-        position: absolute;
-        top: 88px;
-        left: 0;
-        background-color: var(--white);
-        list-style-type: none;
-    }
-
-    button.nav-item:focus menu,
-    button.nav-item menu:hover {
-        display: initial;
-    }
-
-    button.nav-item menu li:hover {
-        background-color: var(--light-grey);
-    }
-
-    button.nav-item menu li a {
-        display: flex;
-        align-items: stretch;
-        text-decoration: none;
-        width: 100%;
-        height: 80px;
-    }
-
-    button.nav-item menu li a span {
-        display: flex;
-        width: 100%;
-        align-items: center;
-    }
-
-    button.nav-item menu li:not(:last-child) a span {
-        border-bottom: 1px solid var(--light-grey);
-    }
-
-    #solutions menu {
-        width: 270px;
-    }
-
-    #solutions a {
-        padding: 0 40px;
-    }
-
-    #solutions span {
-        text-align: left;
-        color: var(--deep-blue);
-    }
-
-    #languages {
-        min-width: 100px;
-    }
-
-    #languages menu {
-        width: 80px;
-    }
-
-    #languages a {
-        padding: 0 30px;
-    }
-
-    #language {
-        width: 20px;
-        height: 20px;
-    }
-</style>
+<link rel="stylesheet" href="/nav.css">
 <base target="_parent" />
 
-<nav aria-label="Main navigation">
-    <a href="./start.html" class="logo">
-        <img src="/images/logo.svg" alt="Wattical Evaris Tech Logo" />
+<nav id="nav" aria-label="Main navigation">
+    <a href="./start.html" class="nav-home">
+        <svg class="logo" viewBox="0 0 412 50">
+            <use href="/images/logo.svg#logo" />
+        </svg>
     </a>
     <div class="nav-items">
         <a href="./about.html" class="nav-item">About us</a>
         <button class="nav-item" id="solutions">
             Solutions
+            <svg class="menu-indicator" viewBox="0 0 24 24">
+                <use href="/images/arrow.svg#arrow" />
+            </svg>
             <menu>
                 <li><a href="./solution1.html"><span>
                             Vehicle Localization Services in Europe
@@ -147,6 +34,9 @@
         <a href="./contact.html" class="nav-item">Contact</a>
         <button class="nav-item" id="languages" aria-label="Change language">
             <img src="/images/en.png" alt="EN" />
+            <svg class="menu-indicator" viewBox="0 0 24 24">
+                <use href="/images/arrow.svg#arrow" />
+            </svg>
             <menu>
                 <li><a><span><img src="/images/en.png" alt="EN" /></span></a></li>
                 <li><a id="change_language_zh"><span><img src="/images/zh.png" alt="ZH" /></span></a></li>
@@ -155,6 +45,7 @@
     </div>
 </nav>
 
+<script src="/nav.js"></script>
 <script>
     document.getElementById('change_language_zh').setAttribute('href', window.parent.location.pathname.replace('/en/', '/zh/'));
 </script>
