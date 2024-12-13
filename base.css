@@ -1,11 +1,11 @@
 :root {
-    --primary-color: #1C283D;
-    --secondary-color: #FF4029;
-    --background-color: #E9EBF0;
-    --text-color: #A0AFBA;
-    --divider-color: #59687A;
+    --navy-blue: #1C283D;
+    --coral-red: #FF4029;
+    --light-grey: #E9EBF0;
+    --fog-blue: #A0AFBA;
+    --royal-blue: #59687A;
     --white: #fff;
-    --black: #00060D;
+    --deep-blue: #00060D;
     --font-primary: Verdana, Arial, sans-serif;
     --transition-default: 0.3s ease;
 }
@@ -23,7 +23,7 @@ html {
 body {
     font-family: var(--font-primary);
     line-height: 1.5;
-    color: var(--primary-color);
+    color: var(--navy-blue);
     overflow-x: hidden;
 }
 
