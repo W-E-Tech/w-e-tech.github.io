@@ -1,51 +1,52 @@
-<link rel="stylesheet" href="/base.css">
-<link rel="stylesheet" href="/nav.css">
-<base target="_parent" />
+<head>
+    <link rel="stylesheet" href="/base.css">
+    <link rel="stylesheet" href="/nav.css">
+    <base target="_parent" />
+</head>
 
-<nav id="nav" aria-label="Main navigation">
-    <a href="./start.html" class="nav-home">
-        <svg class="logo" viewBox="0 0 412 50">
-            <use href="/images/logo.svg#logo" />
-        </svg>
-    </a>
-    <div class="nav-items">
-        <a href="./about.html" class="nav-item">关于我们</a>
-        <button class="nav-item" id="solutions">
-            解决方案
-            <svg class="menu-indicator" viewBox="0 0 24 24">
-                <use href="/images/arrow.svg#arrow" />
+<body>
+    <nav id="nav" aria-label="Main navigation">
+        <input type="checkbox" id="hamburger_state" />
+        <button id="hamburger_back"></button>
+        <a href="./start.html" class="nav-home">
+            <svg class="logo" viewBox="0 0 412 50">
+                <use href="/images/logo.svg#logo" />
             </svg>
-            <menu>
-                <li><a href="./solution1.html"><span>
-                            整车欧洲本地化
-                        </span></a></li>
-                <li><a href="./solution2.html"><span>
-                            零部件出海一体化服务
-                        </span></a></li>
-                <li><a href="./solution3.html"><span>
-                            测试设备
-                        </span></a></li>
-                <li><a href="./solution4.html"><span>
-                            欧洲人力资源
-                        </span></a></li>
-            </menu>
-        </button>
-        <a href="./career.html" class="nav-item">加入我们</a>
-        <a href="./contact.html" class="nav-item">联系方式</a>
-        <button class="nav-item" id="languages" aria-label="Change language">
-            <img src="/images/zh.png" alt="ZH" />
-            <svg class="menu-indicator" viewBox="0 0 24 24">
-                <use href="/images/arrow.svg#arrow" />
-            </svg>
-            <menu>
-                <li><a id="change_language_en"><span><img src="/images/en.png" alt="EN" /></span></a></li>
-                <li><a><span><img src="/images/zh.png" alt="ZH" /></span></a></li>
-            </menu>
-        </button>
-    </div>
-</nav>
+        </a>
+        <label for="hamburger_state"></label>
+        <div class="nav-items">
+            <a href="./about.html" class="nav-item"><span>关于我们</span></a>
+            <button class="nav-item" id="solutions">
+                <span>解决方案</span>
+                <menu>
+                    <li><a href="./solution1.html"><span>
+                                整车欧洲本地化
+                            </span></a></li>
+                    <li><a href="./solution2.html"><span>
+                                零部件出海一体化服务
+                            </span></a></li>
+                    <li><a href="./solution3.html"><span>
+                                测试设备
+                            </span></a></li>
+                    <li><a href="./solution4.html"><span>
+                                欧洲人力资源
+                            </span></a></li>
+                </menu>
+            </button>
+            <a href="./career.html" class="nav-item"><span>加入我们</span></a>
+            <a href="./contact.html" class="nav-item"><span>联系方式</span></a>
+            <button class="nav-item" id="languages" aria-label="Change language">
+                <span><img src="/images/zh.png" alt="ZH" /></span>
+                <menu>
+                    <li><a id="change_language_en"><span><img src="/images/en.png" alt="EN" /></span></a></li>
+                    <li><a><span><img src="/images/zh.png" alt="ZH" /></span></a></li>
+                </menu>
+            </button>
+        </div>
+    </nav>
 
-<script src="/nav.js"></script>
-<script>
-    document.getElementById('change_language_en').setAttribute('href', window.parent.location.pathname.replace('/zh/', '/en/'));
-</script>
+    <script src="/nav.js"></script>
+    <script>
+        document.getElementById('change_language_en').setAttribute('href', window.parent.location.pathname.replace('/zh/', '/en/'));
+    </script>
+</body>

@@ -1,51 +1,52 @@
-<link rel="stylesheet" href="/base.css">
-<link rel="stylesheet" href="/nav.css">
-<base target="_parent" />
+<head>
+    <link rel="stylesheet" href="/base.css">
+    <link rel="stylesheet" href="/nav.css">
+    <base target="_parent" />
+</head>
 
-<nav id="nav" aria-label="Main navigation">
-    <a href="./start.html" class="nav-home">
-        <svg class="logo" viewBox="0 0 412 50">
-            <use href="/images/logo.svg#logo" />
-        </svg>
-    </a>
-    <div class="nav-items">
-        <a href="./about.html" class="nav-item">About us</a>
-        <button class="nav-item" id="solutions">
-            Solutions
-            <svg class="menu-indicator" viewBox="0 0 24 24">
-                <use href="/images/arrow.svg#arrow" />
+<body>
+    <nav id="nav" aria-label="Main navigation">
+        <input type="checkbox" id="hamburger_state" />
+        <button id="hamburger_back"></button>
+        <a href="./start.html" class="nav-home">
+            <svg class="logo" viewBox="0 0 412 50">
+                <use href="/images/logo.svg#logo" />
             </svg>
-            <menu>
-                <li><a href="./solution1.html"><span>
-                            Vehicle Localization Services in Europe
-                        </span></a></li>
-                <li><a href="./solution2.html"><span>
-                            Comprehensive Parts Export Services
-                        </span></a></li>
-                <li><a href="./solution3.html"><span>
-                            Testing Equipment Services
-                        </span></a></li>
-                <li><a href="./solution4.html"><span>
-                            European Human Resources Services
-                        </span></a></li>
-            </menu>
-        </button>
-        <a href="./career.html" class="nav-item">Career</a>
-        <a href="./contact.html" class="nav-item">Contact</a>
-        <button class="nav-item" id="languages" aria-label="Change language">
-            <img src="/images/en.png" alt="EN" />
-            <svg class="menu-indicator" viewBox="0 0 24 24">
-                <use href="/images/arrow.svg#arrow" />
-            </svg>
-            <menu>
-                <li><a><span><img src="/images/en.png" alt="EN" /></span></a></li>
-                <li><a id="change_language_zh"><span><img src="/images/zh.png" alt="ZH" /></span></a></li>
-            </menu>
-        </button>
-    </div>
-</nav>
+        </a>
+        <label for="hamburger_state"></label>
+        <div class="nav-items">
+            <a href="./about.html" class="nav-item"><span>About us</span></a>
+            <button class="nav-item" id="solutions">
+                <span>Solutions</span>
+                <menu>
+                    <li><a href="./solution1.html"><span>
+                                Vehicle Localization Services in Europe
+                            </span></a></li>
+                    <li><a href="./solution2.html"><span>
+                                Comprehensive Parts Export Services
+                            </span></a></li>
+                    <li><a href="./solution3.html"><span>
+                                Testing Equipment Services
+                            </span></a></li>
+                    <li><a href="./solution4.html"><span>
+                                European Human Resources Services
+                            </span></a></li>
+                </menu>
+            </button>
+            <a href="./career.html" class="nav-item"><span>Career</span></a>
+            <a href="./contact.html" class="nav-item"><span>Contact</span></a>
+            <button class="nav-item" id="languages" aria-label="Change language">
+                <span><img src="/images/en.png" alt="EN" /></span>
+                <menu>
+                    <li><a><span><img src="/images/en.png" alt="EN" /></span></a></li>
+                    <li><a id="change_language_zh"><span><img src="/images/zh.png" alt="ZH" /></span></a></li>
+                </menu>
+            </button>
+        </div>
+    </nav>
 
-<script src="/nav.js"></script>
-<script>
-    document.getElementById('change_language_zh').setAttribute('href', window.parent.location.pathname.replace('/en/', '/zh/'));
-</script>
+    <script src="/nav.js"></script>
+    <script>
+        document.getElementById('change_language_zh').setAttribute('href', window.parent.location.pathname.replace('/en/', '/zh/'));
+    </script>
+</body>
