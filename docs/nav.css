@@ -55,6 +55,16 @@ nav.light * {
     min-width: 160px;
     align-items: stretch;
     justify-content: center;
+    position: relative;
+}
+
+.nav-item.current-nav-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 40px;
+    height: 5px;
+    background-color: var(--coral-red);
 }
 
 a.nav-item {
@@ -206,6 +216,10 @@ button.nav-item>span::after {
 
     button.nav-item {
         position: initial;
+    }
+
+    .nav-item.current-nav-item::after {
+        display: none;
     }
 
     #solutions menu,
