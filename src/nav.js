@@ -1,11 +1,8 @@
-const pageName = window.parent.location.pathname.match(/\/(\w+)\.html$/)[1]
-const navName = pageName.startsWith('solution') ? 'solutions' : pageName;
-
-document
-    .getElementById('nav')
-    .setAttribute('class', pageName === 'start' ? 'dark' : 'light');
-
-document
-    .getElementById(navName)
-    .classList
-    .add('current-nav-item');
+window.onload = function () {
+    fetch('./nav.template.html')
+        .then(function (response) {
+            return response.text();
+        }).then(function (htmlText) {
+            document.getElementById('navbar').appendChild(new DOMParser().parseFromString(htmlText, 'text/html').querySelector('template').content.cloneNode(true))
+        });
+}

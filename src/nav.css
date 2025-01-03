@@ -1,4 +1,6 @@
 nav {
+    position: fixed;
+    top: 0;
     height: 80px;
     width: 100%;
     display: flex;
@@ -7,6 +9,8 @@ nav {
     font-weight: bold;
     align-items: stretch;
     border-bottom-width: 1px !important;
+    user-select: none;
+    z-index: 1;
 }
 
 nav.dark,
@@ -190,7 +194,7 @@ button.nav-item>span::after {
     }
 
     .nav-items {
-        position: absolute;
+        position: fixed;
         top: 80px;
         bottom: 0;
         width: 100%;
