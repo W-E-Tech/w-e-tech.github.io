@@ -41,11 +41,51 @@ button {
     color: inherit;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1em;
+}
+
 #navbar {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 10;
+}
+
+header {
+    height: 1100px;
+}
+
+header::after {
+    content: url('/images/mouse.svg');
+    position: absolute;
+    left: 50%;
+    bottom: 110px;
+    width: 0;
+    overflow: visible;
+}
+
+.button {
+    font-size: 18px;
+    font-weight: bold;
+    min-width: 300px;
+    height: 60px;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button.secondary {
+    background-color: var(--white);
+    color: var(--deep-blue);
+    box-shadow: var(--coral-red) 10px -10px;
 }
