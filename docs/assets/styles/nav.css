@@ -124,7 +124,7 @@ button.nav-item>span::after {
     width: 1em;
     height: 1em;
     margin-left: 0.75em;
-    mask: url('/images/caret.svg');
+    mask: url('/assets/images/caret.svg');
     background-color: currentColor;
 }
 
@@ -176,13 +176,13 @@ button.nav-item>span::after {
         content: '';
         width: 80px;
         border-bottom-width: 1px !important;
-        mask: url('/images/menu.svg') center / 2em no-repeat;
+        mask: url('/assets/images/menu.svg') center / 2em no-repeat;
         background-color: currentColor;
         z-index: 10;
     }
 
     #hamburger_state:checked+label[for='hamburger_state'] {
-        mask-image: url('/images/cross.svg');
+        mask-image: url('/assets/images/cross.svg');
     }
 
     #hamburger_state:checked~.nav-home {
@@ -245,7 +245,7 @@ button.nav-item>span::after {
         width: 80px;
         height: 80px;
         border-bottom-width: 1px !important;
-        mask: url('/images/arrow.svg') center / 2em no-repeat;
+        mask: url('/assets/images/arrow.svg') center / 2em no-repeat;
         background-color: currentColor;
         z-index: -1;
     }

@@ -57,7 +57,7 @@ header {
 }
 
 header::after {
-    content: url('/images/mouse.svg');
+    content: url('/assets/images/mouse.svg');
     position: absolute;
     left: 50%;
     bottom: 110px;

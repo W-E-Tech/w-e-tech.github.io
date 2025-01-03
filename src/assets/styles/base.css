@@ -1,0 +1,83 @@
+:root {
+    --navy-blue: #1C283D;
+    --coral-red: #FF4029;
+    --light-grey: #E9EBF0;
+    --fog-blue: #A0AFBA;
+    --royal-blue: #59687A;
+    --white: #fff;
+    --deep-blue: #00060D;
+    --font-primary: Verdana, Arial, sans-serif;
+    --transition-default: 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-primary);
+    line-height: 1.5;
+    color: var(--navy-blue);
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font: inherit;
+    color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1em;
+}
+
+header {
+    height: 1100px;
+}
+
+header::after {
+    content: url('/assets/images/mouse.svg');
+    position: absolute;
+    left: 50%;
+    bottom: 110px;
+    width: 0;
+    overflow: visible;
+}
+
+.button {
+    font-size: 18px;
+    font-weight: bold;
+    min-width: 300px;
+    height: 60px;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button.secondary {
+    background-color: var(--white);
+    color: var(--deep-blue);
+    box-shadow: var(--coral-red) 10px -10px;
+}

@@ -2,7 +2,7 @@
 
 CWD=$(dirname $(realpath $0))
 
-cp -rf $CWD/src/images $CWD/docs/
+cp -rf $CWD/src/assets $CWD/docs/
 cp -f $CWD/src/*.* $CWD/docs/
 sed -f $CWD/en.sed $CWD/src/index.html > $CWD/docs/index.html
 
