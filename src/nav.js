@@ -3,6 +3,6 @@ window.onload = function () {
         .then(function (response) {
             return response.text();
         }).then(function (htmlText) {
-            document.getElementById('navbar').appendChild(new DOMParser().parseFromString(htmlText, 'text/html').querySelector('template').content.cloneNode(true))
+            document.querySelector('nav').appendChild(new DOMParser().parseFromString(htmlText, 'text/html').querySelector('template').content.cloneNode(true))
         });
 }
