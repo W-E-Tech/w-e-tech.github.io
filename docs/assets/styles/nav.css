@@ -122,27 +122,27 @@ button.nav-item>span::after {
     background-color: currentColor;
 }
 
-#solutions menu {
+#nav_item_solutions menu {
     width: 270px;
 }
 
-#solutions a {
+#nav_item_solutions a {
     padding: 0 40px;
 }
 
-#solutions span {
+#nav_item_solutions span {
     text-align: left;
 }
 
-#languages {
+#nav_item_languages {
     min-width: 100px;
 }
 
-#languages menu {
+#nav_item_languages menu {
     width: 80px;
 }
 
-#languages a {
+#nav_item_languages a {
     padding: 0 30px;
 }
 
@@ -220,8 +220,7 @@ button.nav-item>span::after {
         display: none;
     }
 
-    #solutions menu,
-    #languages menu {
+    button.nav-item menu {
         margin: 0;
         top: 0;
         bottom: 0;
@@ -230,8 +229,7 @@ button.nav-item>span::after {
         justify-content: center;
     }
 
-    #solutions menu::after,
-    #languages menu::after {
+    button.nav-item menu::after {
         content: '';
         position: absolute;
         top: -80px;
@@ -244,6 +242,12 @@ button.nav-item>span::after {
         z-index: -1;
     }
 
+    button.nav-item menu span {
+        width: 120px;
+        overflow: visible;
+        white-space: nowrap;
+    }
+
     #hamburger_state:checked~#hamburger_back {
         display: block;
         position: absolute;
@@ -253,12 +257,5 @@ button.nav-item>span::after {
         height: 80px;
         z-index: 100;
         opacity: 0;
-    }
-
-    #solutions menu span,
-    #languages menu span {
-        width: 120px;
-        overflow: visible;
-        white-space: nowrap;
     }
 }
