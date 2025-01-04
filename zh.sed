@@ -1,5 +1,6 @@
 s/{{lang}}/zh/g
 s/{{LANG}}/ZH/g
+s/{{start}}/首页/g
 s/{{about_us}}/关于我们/g
 s/{{solutions}}/解决方案/g
 s/{{solution1}}/整车欧洲本地化/g
@@ -13,3 +14,5 @@ s/{{header_subtitle}}/赋能全球汽车创新/g
 s/{{header_paragraph1}}/助力欧洲市场，提供无缝的本地化、合规与市场扩展服务/g
 s/{{header_paragraph2}}/以专业与创新推动您在欧洲市场的成功/g
 s/{{contact_us}}/联系我们/g
+s/{{imprint}}/版权声明/g
+s/{{data_protection}}/数据保护/g

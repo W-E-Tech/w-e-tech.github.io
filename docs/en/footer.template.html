@@ -1,3 +1,22 @@
 <template>
-    This is footer
+    <h1><img src="/assets/images/footer_logo.svg" alt="Wattical Evaris Tech"></h1>
+    <hr />
+    <div class="content">
+        <p class="legal">© <span id="year"></span> Wattical Evaris Tech GmbH</p>
+        <ul>
+            <li><a href="./start.html">Start</a></li>
+            <li><a href="./solution1.html">Solutions</a></li>
+            <li><a href="./about.html">About us</a></li>
+            <li><a href="./career.html">Career</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+        <ul>
+            <li>Imprint</li>
+            <li>Data protection</li>
+            <li><a href="mailto:info@wattical-evaris-tech.com">info@wattical-evaris-tech.com</a></li>
+        </ul>
+    </div>
+    <script>
+        document.getElementById('year').innerText = new Date().getFullYear().toString();
+    </script>
 </template>

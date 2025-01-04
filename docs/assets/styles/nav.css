@@ -71,10 +71,6 @@ nav.light * {
     background-color: var(--coral-red);
 }
 
-a.nav-item {
-    text-decoration: none;
-}
-
 .nav-item>span {
     display: flex;
     align-items: center;
@@ -94,7 +90,6 @@ button.nav-item menu {
     margin-top: 8px;
     top: 80px;
     left: 0;
-    list-style-type: none;
 }
 
 button.nav-item:not(:focus) menu:not(:hover) {
@@ -105,7 +100,6 @@ button.nav-item menu li a {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-decoration: none;
 }
 
 button.nav-item menu li a span {

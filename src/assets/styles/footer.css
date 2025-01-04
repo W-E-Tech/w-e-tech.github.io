@@ -1,0 +1,38 @@
+footer {
+    padding: 80px 245px;
+    height: 600px;
+    background: no-repeat center / cover url('/assets/images/footer_background.svg');
+}
+
+footer h1 {
+    width: 200px;
+    margin: 0 auto;
+}
+
+footer hr {
+    border: none;
+    border-top: 1px solid var(--navy-blue);
+    margin-top: 80px;
+}
+
+footer .content {
+    margin-top: 60px;
+    color: var(--white);
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+}
+
+footer .content .legal {
+    width: 100%;
+}
+
+footer .content ul {
+    border-left: 2px solid var(--white);
+    padding-left: 18px;
+    min-width: 180px;
+}
+
+footer .content a[href^="mailto:"] {
+    white-space: nowrap;
+}
