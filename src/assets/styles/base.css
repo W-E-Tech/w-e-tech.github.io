@@ -75,6 +75,10 @@ header::after {
     overflow: visible;
 }
 
+main>article {
+    padding: 120px 245px 0;
+}
+
 .button {
     font-size: 18px;
     font-weight: bold;
