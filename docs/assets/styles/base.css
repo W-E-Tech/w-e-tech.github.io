@@ -65,6 +65,11 @@ header::after {
     overflow: visible;
 }
 
+footer {
+    height: 600px;
+    background: no-repeat center / cover url('/assets/images/footer_background.svg');
+}
+
 .button {
     font-size: 18px;
     font-weight: bold;
