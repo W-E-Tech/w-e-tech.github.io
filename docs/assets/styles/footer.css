@@ -36,3 +36,25 @@ footer .content ul {
 footer .content a[href^="mailto:"] {
     white-space: nowrap;
 }
+
+@media (max-width: 1200px) {
+    footer {
+        padding: 60px 24px 195px;
+    }
+
+    footer h1 {
+        width: 100px;
+    }
+
+    footer hr {
+        margin-top: 60px;
+    }
+
+    footer .content {
+        flex-direction: column;
+    }
+
+    footer ul {
+        margin-top: 24px;
+    }
+}
