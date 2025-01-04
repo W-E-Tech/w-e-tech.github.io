@@ -100,13 +100,16 @@ button.nav-item menu li a {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0 40px;
 }
 
 button.nav-item menu li a span {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     height: 80px;
+    width: 100%;
+    white-space: nowrap;
 }
 
 button.nav-item menu li:not(:last-child) a span {
@@ -122,35 +125,16 @@ button.nav-item>span::after {
     background-color: currentColor;
 }
 
-#nav_item_solutions menu {
-    width: 270px;
-}
-
-#nav_item_solutions a {
-    padding: 0 40px;
-}
-
-#nav_item_solutions span {
-    text-align: left;
-}
-
-#nav_item_languages {
-    min-width: 100px;
-}
-
-#nav_item_languages menu {
-    width: 80px;
-}
-
-#nav_item_languages a {
-    padding: 0 30px;
-}
-
 #hamburger_back {
     display: none;
 }
 
 @media (max-width: 1200px) {
+    nav * {
+        -webkit-tap-highlight-color: transparent;
+        outline: none;
+    }
+
     nav.dark {
         background-color: var(--deep-blue);
     }
@@ -242,10 +226,11 @@ button.nav-item>span::after {
         z-index: -1;
     }
 
-    button.nav-item menu span {
+    button.nav-item menu li a span {
         width: 120px;
         overflow: visible;
         white-space: nowrap;
+        justify-content: center;
     }
 
     #hamburger_state:checked~#hamburger_back {
