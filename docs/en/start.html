@@ -25,6 +25,10 @@
             font-size: 18px;
         }
 
+        header h1 {
+            max-width: 1790px;
+        }
+
         header h2 {
             font-weight: bold;
         }
@@ -37,13 +41,64 @@
             margin-top: 60px;
         }
 
+        #about_us {
+            padding-bottom: 120px;
+            background-image: linear-gradient(to right, var(--light-grey) 68%, var(--white) 68%);
+            display: flex;
+            flex-direction: row;
+            align-items: start;
+            gap: 80px;
+        }
+
+        #about_us>.introduction {
+            width: 100%;
+            align-self: stretch;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #about_us>.introduction>h2 {
+            font-size: 60px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            height: 200px;
+        }
+
+        #about_us>.introduction>p {
+            flex-grow: 1;
+        }
+
+        #about_us>.introduction>img {
+            width: 325px;
+        }
+
+        #about_us>.picture>img {
+            box-shadow: var(--navy-blue) 20px -24px;
+        }
+
         @media (max-width: 1200px) {
             header {
                 padding: 300px 24px 0;
+                overflow: hidden;
             }
 
             header::after {
                 display: none;
+            }
+
+            #about_us {
+                flex-direction: column;
+                overflow: hidden;
+            }
+
+            #about_us p {
+                height: auto;
+                margin-bottom: 120px;
+            }
+
+            #about_us .picture {
+                max-width: 354px;
             }
         }
     </style>
@@ -58,7 +113,19 @@
         <p>Driving Your Success in Europe with Expertise and Innovation</p>
         <button class="button secondary" onclick="javascript: alert()">Contact us</button>
     </header>
-    <main></main>
+    <main>
+        <article id="about_us">
+            <div class="introduction">
+                <h2>About us</h2>
+                <p>{{start_about_us_paragraph}}
+                </p>
+                <img src="/assets/images/logo.svg" alt="">
+            </div>
+            <div class="picture">
+                <img src="/assets/images/surfing.jpg" alt="">
+            </div>
+        </article>
+    </main>
     <footer></footer>
 </body>
 

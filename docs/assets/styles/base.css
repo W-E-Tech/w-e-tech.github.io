@@ -75,11 +75,14 @@ header::after {
     overflow: visible;
 }
 
+main>article {
+    padding: 120px 245px 0;
+}
+
 .button {
     font-size: 18px;
     font-weight: bold;
-    min-width: 300px;
-    height: 60px;
+    padding: 20px 100px;
 }
 
 .button:hover {
@@ -90,4 +93,11 @@ header::after {
     background-color: var(--white);
     color: var(--deep-blue);
     box-shadow: var(--coral-red) 10px -10px;
+}
+
+@media (max-width: 1200px) {
+    main>article {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
 }
