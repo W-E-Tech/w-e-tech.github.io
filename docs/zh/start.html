@@ -22,7 +22,6 @@
             background-color: var(--deep-blue);
             padding: 160px 245px 0;
             color: var(--fog-blue);
-            font-size: 18px;
         }
 
         header h1 {
@@ -42,7 +41,6 @@
         }
 
         #about_us {
-            padding-bottom: 120px;
             background-image: linear-gradient(to right, var(--light-grey) 68%, var(--white) 68%);
             display: flex;
             flex-direction: row;
@@ -57,14 +55,6 @@
             flex-direction: column;
         }
 
-        #about_us>.introduction>h2 {
-            font-size: 60px;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-            height: 200px;
-        }
-
         #about_us>.introduction>p {
             flex-grow: 1;
         }
@@ -77,10 +67,42 @@
             box-shadow: var(--navy-blue) 20px -24px;
         }
 
+        #our_services {
+            background: no-repeat top / cover url('/assets/images/article_background.png');
+            background-color: var(--deep-blue);
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: var(--gap);
+            --gap: 30px;
+        }
+
+        #our_services h2 {
+            width: 100%;
+            color: var(--white);
+        }
+
+        #our_services h3 {
+            width: 100%;
+        }
+
+        #our_services section {
+            width: calc((100% - var(--gap)*2)/3);
+        }
+
+        #our_services>section:first-of-type {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            row-gap: 60px;
+            column-gap: var(--gap);
+            --gap: 150px;
+        }
+
         @media (max-width: 1200px) {
             header {
                 padding: 300px 24px 0;
-                overflow: hidden;
             }
 
             header::after {
@@ -89,7 +111,6 @@
 
             #about_us {
                 flex-direction: column;
-                overflow: hidden;
             }
 
             #about_us p {
@@ -99,6 +120,10 @@
 
             #about_us .picture {
                 max-width: 354px;
+            }
+
+            #our_services section {
+                width: 100%;
             }
         }
     </style>
@@ -124,6 +149,36 @@
             <div class="picture">
                 <img src="/assets/images/surfing.jpg" alt="">
             </div>
+        </article>
+        <article id="our_services" class="with-section-number">
+            <h2>我们的服务</h2>
+            <section>
+                <h3>整车本地化服务</h3>
+                <section>
+                    <h4>本地化验证</h4>
+                    <p>提供全面的本地化测试和验证服务，确保车辆符合欧洲市场的使用需求和技术标准。</p>
+                </section>
+                <section>
+                    <h4>法律合规与认证支持</h4>
+                    <p>我们的团队熟悉欧洲各国的法律法规，提供从产品认证到法规合规的全流程支持，确保车辆在欧洲市场的合法合规。</p>
+                </section>
+                <section>
+                    <h4>市场问题解决与成本节约</h4>
+                    <p>通过丰富的经验和本地资源，帮助企业高效解决市场端问题，避免不必要的弯路和开支，确保投资的有效性。</p>
+                </section>
+            </section>
+            <section>
+                <h3>零部件出海一体化服务</h3>
+                <p>为全球零部件供应商提供从市场分析、产品认证到销售渠道建设的全方位支持，助力零部件产品顺利进入欧洲市场并建立长期竞争力。</p>
+            </section>
+            <section>
+                <h3>测试设备服务</h3>
+                <p>提供专业的测试设备选择和购置服务，同时为国内设备在欧洲市场的推广提供支持，确保测试过程的高效和精准。</p>
+            </section>
+            <section>
+                <h3>欧洲人力资源服务</h3>
+                <p>针对企业在欧洲的本地化运营需求，提供高管、中层管理人员以及各领域专家的招聘和人力资源支持，帮助企业快速组建并优化欧洲市场的团队。</p>
+            </section>
         </article>
     </main>
     <footer></footer>

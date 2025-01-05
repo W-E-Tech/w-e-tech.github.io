@@ -23,6 +23,7 @@ html {
 body {
     font-family: var(--font-primary);
     line-height: 1.5;
+    font-size: 18px;
     color: var(--navy-blue);
     overflow-x: hidden;
 }
@@ -75,12 +76,80 @@ header::after {
     overflow: visible;
 }
 
+header,
+main {
+    overflow-x: hidden;
+}
+
 main>article {
-    padding: 120px 245px 0;
+    padding: 120px 245px;
+}
+
+main>article h2 {
+    font-size: 60px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    height: 200px;
+}
+
+main>article>section:nth-of-type(1) {
+    --nth: '01'
+}
+
+main>article>section:nth-of-type(2) {
+    --nth: '02'
+}
+
+main>article>section:nth-of-type(3) {
+    --nth: '03'
+}
+
+main>article>section:nth-of-type(4) {
+    --nth: '04'
+}
+
+main>article>section:nth-of-type(5) {
+    --nth: '05'
+}
+
+main>article>section {
+    padding: 100px 60px;
+    position: relative;
+    background-color: var(--light-grey);
+}
+
+main>article>section>* {
+    position: relative;
+}
+
+main>article.with-section-number>section::before {
+    content: var(--nth);
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 160px;
+    color: var(--white);
+}
+
+main>article>section h3 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+main>article>section h3+p {
+    margin-top: 100px;
+}
+
+main>article>section h4 {
+    font-weight: bold;
+}
+
+main>article>section h4+p {
+    margin-top: 1em;
 }
 
 .button {
-    font-size: 18px;
     font-weight: bold;
     padding: 20px 100px;
 }

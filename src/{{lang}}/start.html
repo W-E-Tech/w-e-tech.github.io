@@ -22,7 +22,6 @@
             background-color: var(--deep-blue);
             padding: 160px 245px 0;
             color: var(--fog-blue);
-            font-size: 18px;
         }
 
         header h1 {
@@ -42,7 +41,6 @@
         }
 
         #about_us {
-            padding-bottom: 120px;
             background-image: linear-gradient(to right, var(--light-grey) 68%, var(--white) 68%);
             display: flex;
             flex-direction: row;
@@ -57,14 +55,6 @@
             flex-direction: column;
         }
 
-        #about_us>.introduction>h2 {
-            font-size: 60px;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-            height: 200px;
-        }
-
         #about_us>.introduction>p {
             flex-grow: 1;
         }
@@ -77,10 +67,42 @@
             box-shadow: var(--navy-blue) 20px -24px;
         }
 
+        #our_services {
+            background: no-repeat top / cover url('/assets/images/article_background.png');
+            background-color: var(--deep-blue);
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: var(--gap);
+            --gap: 30px;
+        }
+
+        #our_services h2 {
+            width: 100%;
+            color: var(--white);
+        }
+
+        #our_services h3 {
+            width: 100%;
+        }
+
+        #our_services section {
+            width: calc((100% - var(--gap)*2)/3);
+        }
+
+        #our_services>section:first-of-type {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            row-gap: 60px;
+            column-gap: var(--gap);
+            --gap: 150px;
+        }
+
         @media (max-width: 1200px) {
             header {
                 padding: 300px 24px 0;
-                overflow: hidden;
             }
 
             header::after {
@@ -89,7 +111,6 @@
 
             #about_us {
                 flex-direction: column;
-                overflow: hidden;
             }
 
             #about_us p {
@@ -100,6 +121,10 @@
             #about_us .picture {
                 max-width: 354px;
             }
+
+            #our_services section {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -109,21 +134,51 @@
     <header>
         <h1><img src="/assets/images/header_logo.svg" alt="Wattical Evaris Tech"></h1>
         <h2>{{header_subtitle}}</h2>
-        <p>{{header_paragraph1}}</p>
-        <p>{{header_paragraph2}}</p>
+        <p>{{header_text1}}</p>
+        <p>{{header_text2}}</p>
         <button class="button secondary" onclick="javascript: alert()">{{contact_us}}</button>
     </header>
     <main>
         <article id="about_us">
             <div class="introduction">
                 <h2>{{about_us}}</h2>
-                <p>{{start_about_us_paragraph}}
+                <p>{{start_about_us_text}}
                 </p>
                 <img src="/assets/images/logo.svg" alt="">
             </div>
             <div class="picture">
                 <img src="/assets/images/surfing.jpg" alt="">
             </div>
+        </article>
+        <article id="our_services" class="with-section-number">
+            <h2>{{our_services}}</h2>
+            <section>
+                <h3>{{vehicle_localization_services}}</h3>
+                <section>
+                    <h4>{{localization_testing}}</h4>
+                    <p>{{localization_testing_text}}</p>
+                </section>
+                <section>
+                    <h4>{{legal_compliance_and_certification_support}}</h4>
+                    <p>{{legal_compliance_and_certification_support_text}}</p>
+                </section>
+                <section>
+                    <h4>{{market_issue_resolution_and_cost_optimization}}</h4>
+                    <p>{{market_issue_resolution_and_cost_optimization_text}}</p>
+                </section>
+            </section>
+            <section>
+                <h3>{{integrated_services_for_parts_export}}</h3>
+                <p>{{integrated_services_for_parts_export_text}}</p>
+            </section>
+            <section>
+                <h3>{{testing_equipment_services}}</h3>
+                <p>{{testing_equipment_services_text}}</p>
+            </section>
+            <section>
+                <h3>{{european_human_resources_services}}</h3>
+                <p>{{european_human_resources_services_text}}</p>
+            </section>
         </article>
     </main>
     <footer></footer>

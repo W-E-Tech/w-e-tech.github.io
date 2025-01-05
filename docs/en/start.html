@@ -22,7 +22,6 @@
             background-color: var(--deep-blue);
             padding: 160px 245px 0;
             color: var(--fog-blue);
-            font-size: 18px;
         }
 
         header h1 {
@@ -42,7 +41,6 @@
         }
 
         #about_us {
-            padding-bottom: 120px;
             background-image: linear-gradient(to right, var(--light-grey) 68%, var(--white) 68%);
             display: flex;
             flex-direction: row;
@@ -57,14 +55,6 @@
             flex-direction: column;
         }
 
-        #about_us>.introduction>h2 {
-            font-size: 60px;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-            height: 200px;
-        }
-
         #about_us>.introduction>p {
             flex-grow: 1;
         }
@@ -77,10 +67,42 @@
             box-shadow: var(--navy-blue) 20px -24px;
         }
 
+        #our_services {
+            background: no-repeat top / cover url('/assets/images/article_background.png');
+            background-color: var(--deep-blue);
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: var(--gap);
+            --gap: 30px;
+        }
+
+        #our_services h2 {
+            width: 100%;
+            color: var(--white);
+        }
+
+        #our_services h3 {
+            width: 100%;
+        }
+
+        #our_services section {
+            width: calc((100% - var(--gap)*2)/3);
+        }
+
+        #our_services>section:first-of-type {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            row-gap: 60px;
+            column-gap: var(--gap);
+            --gap: 150px;
+        }
+
         @media (max-width: 1200px) {
             header {
                 padding: 300px 24px 0;
-                overflow: hidden;
             }
 
             header::after {
@@ -89,7 +111,6 @@
 
             #about_us {
                 flex-direction: column;
-                overflow: hidden;
             }
 
             #about_us p {
@@ -99,6 +120,10 @@
 
             #about_us .picture {
                 max-width: 354px;
+            }
+
+            #our_services section {
+                width: 100%;
             }
         }
     </style>
@@ -124,6 +149,36 @@
             <div class="picture">
                 <img src="/assets/images/surfing.jpg" alt="">
             </div>
+        </article>
+        <article id="our_services" class="with-section-number">
+            <h2>Our Services</h2>
+            <section>
+                <h3>Vehicle Localization Services</h3>
+                <section>
+                    <h4>Localization Testing</h4>
+                    <p>We provide comprehensive localization testing and validation services to ensure that vehicles meet the technical standards and usage requirements of the European market.</p>
+                </section>
+                <section>
+                    <h4>Legal Compliance and Certification Support</h4>
+                    <p>Our team is well-versed in the laws and regulations of European countries, offering end-to-end support from product certification to regulatory compliance, ensuring vehicles are legally compliant in the European market.</p>
+                </section>
+                <section>
+                    <h4>Market Issue Resolution and Cost Optimization</h4>
+                    <p>With our wealth of experience and local resources, we help businesses efficiently resolve market-related issues, avoid unnecessary costs, and ensure the effectiveness of their investments.</p>
+                </section>
+            </section>
+            <section>
+                <h3>Integrated Services for Parts Export</h3>
+                <p>We offer global parts suppliers comprehensive support, including market analysis, product certification, and sales channel development, helping parts products successfully enter the European market and establish long-term competitiveness.</p>
+            </section>
+            <section>
+                <h3>Testing Equipment Services</h3>
+                <p>We provide professional testing equipment selection and procurement services, as well as support for the promotion of global equipment in the European market, ensuring efficient and accurate testing processes.</p>
+            </section>
+            <section>
+                <h3>European Human Resources Services</h3>
+                <p>We offer recruitment and human resources support for executives, middle management, and experts across various fields to meet the localization needs of businesses operating in Europe, helping companies quickly build and optimize their teams for the European market.</p>
+            </section>
         </article>
     </main>
     <footer></footer>
