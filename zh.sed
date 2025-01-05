@@ -16,3 +16,4 @@ s/{{header_paragraph2}}/以专业与创新推动您在欧洲市场的成功/g
 s/{{contact_us}}/联系我们/g
 s/{{imprint}}/版权声明/g
 s/{{data_protection}}/数据保护/g
+s/{{start_about_us_paragraph}}/Wattical Evaris Tech GmbH 成立于2024年9月，位于德国法兰克福。 我们致力于为全球汽车企业提供欧洲市场的本地化支持与市场拓展服务。依托深厚的本地资源和专业知识，我们帮助各类企业在欧洲市场实现成功发展。/g
