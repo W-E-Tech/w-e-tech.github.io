@@ -147,6 +147,7 @@ button.nav-item>span::after {
         padding-left: 24px;
         border-right: none;
         border: none !important;
+        width: calc(100% - 80px);
     }
 
     label[for='hamburger_state'] {
@@ -157,6 +158,11 @@ button.nav-item>span::after {
         mask: url('/assets/images/menu.svg') center / 2em no-repeat;
         background-color: currentColor;
         z-index: 10;
+    }
+
+    body:has(#hamburger_state:checked) {
+        height: 100vh;
+        overflow-y: hidden;
     }
 
     #hamburger_state:checked+label[for='hamburger_state'] {
