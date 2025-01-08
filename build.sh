@@ -2,8 +2,8 @@
 
 CWD=$(dirname $(realpath $0))
 
-rm -rf $CWD/docs
-mkdir -p $CWD/docs
+rm -R -- $CWD/docs/*/
+find $CWD/docs -type f -not -name 'CNAME' -delete
 cp -rf $CWD/src/assets $CWD/docs/
 cp -f $CWD/src/*.* $CWD/docs/
 sed -f $CWD/en.sed $CWD/src/index.html > $CWD/docs/index.html
