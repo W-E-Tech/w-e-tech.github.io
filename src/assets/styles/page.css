@@ -1,5 +1,6 @@
 header {
     height: 1100px;
+    padding: 160px 245px 0;
 }
 
 header::after {
@@ -9,6 +10,11 @@ header::after {
     bottom: 110px;
     width: 0;
     overflow: visible;
+}
+
+header h1 {
+    font-size: 140px;
+    font-weight: bold;
 }
 
 header,
@@ -85,6 +91,18 @@ main>article>section h4+p {
 }
 
 @media (max-width: 1200px) {
+    header {
+        padding: 300px 24px 0;
+    }
+
+    header::after {
+        display: none;
+    }
+
+    header h1 {
+        font-size: 56px;
+    }
+
     main>article {
         padding-left: 24px;
         padding-right: 24px;
