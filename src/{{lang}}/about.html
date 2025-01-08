@@ -22,6 +22,63 @@
             background-color: var(--deep-blue);
             color: var(--white);
         }
+
+        #company_vision {
+            background-clip: content-box;
+            background-color: var(--navy-blue);
+            display: flex;
+            flex-direction: row;
+            align-items: start;
+            gap: 80px;
+        }
+
+        #company_vision>.introduction {
+            width: 100%;
+            align-self: stretch;
+            display: flex;
+            flex-direction: column;
+            color: var(--white);
+            gap: 60px;
+            padding: 80px;
+        }
+
+        #company_vision>.introduction>h2 {
+            height: auto;
+        }
+
+        #company_vision>.introduction>p {
+            flex-grow: 1;
+        }
+
+        #company_vision>.picture {
+            transform: translate(-80px, 80px);
+        }
+
+        @media (max-width: 1200px) {
+            #company_vision {
+                flex-direction: column;
+                background-clip: border-box;
+                background-image: linear-gradient(to top, var(--light-grey) 360px, var(--navy-blue) 360px);
+            }
+
+            #company_vision>.introduction {
+                padding: 0;
+            }
+
+            #company_vision p {
+                height: auto;
+                margin-bottom: 120px;
+            }
+
+            #company_vision>.picture {
+                max-width: 354px;
+                transform: none;
+            }
+
+            #our_services section {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 
@@ -30,7 +87,17 @@
     <header>
         <h1>{{about_us}}</h1>
     </header>
-    <main></main>
+    <main>
+        <article id="company_vision">
+            <div class="introduction">
+                <h2>{{company_vision}}</h2>
+                <p>{{company_vision_text}}</p>
+            </div>
+            <div class="picture">
+                <img src="/assets/images/rowing.jpg" alt="{{company_vision}}">
+            </div>
+        </article>
+    </main>
     <footer></footer>
 </body>
 

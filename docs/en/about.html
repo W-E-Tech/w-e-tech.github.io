@@ -22,6 +22,63 @@
             background-color: var(--deep-blue);
             color: var(--white);
         }
+
+        #company_vision {
+            background-clip: content-box;
+            background-color: var(--navy-blue);
+            display: flex;
+            flex-direction: row;
+            align-items: start;
+            gap: 80px;
+        }
+
+        #company_vision>.introduction {
+            width: 100%;
+            align-self: stretch;
+            display: flex;
+            flex-direction: column;
+            color: var(--white);
+            gap: 60px;
+            padding: 80px;
+        }
+
+        #company_vision>.introduction>h2 {
+            height: auto;
+        }
+
+        #company_vision>.introduction>p {
+            flex-grow: 1;
+        }
+
+        #company_vision>.picture {
+            transform: translate(-80px, 80px);
+        }
+
+        @media (max-width: 1200px) {
+            #company_vision {
+                flex-direction: column;
+                background-clip: border-box;
+                background-image: linear-gradient(to top, var(--light-grey) 360px, var(--navy-blue) 360px);
+            }
+
+            #company_vision>.introduction {
+                padding: 0;
+            }
+
+            #company_vision p {
+                height: auto;
+                margin-bottom: 120px;
+            }
+
+            #company_vision>.picture {
+                max-width: 354px;
+                transform: none;
+            }
+
+            #our_services section {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 
@@ -30,7 +87,17 @@
     <header>
         <h1>About us</h1>
     </header>
-    <main></main>
+    <main>
+        <article id="company_vision">
+            <div class="introduction">
+                <h2>Company Vision</h2>
+                <p>Our vision is to be the go-to partner for global automotive companies entering the European market. <br><br>With a strong local team, extensive resources, and deep industry expertise, we ensure vehicle manufacturers and parts suppliers establish and grow successfully in Europe. <br><br>We are committed to providing comprehensive localization services, from regulatory compliance to market expansion and channel development, helping businesses navigate potential risks and challenges as they enter the European market. <br><br>Through our expert support, we aim to create a smooth path for the sustainable growth of the global automotive industry in Europe.</p>
+            </div>
+            <div class="picture">
+                <img src="/assets/images/rowing.jpg" alt="Company Vision">
+            </div>
+        </article>
+    </main>
     <footer></footer>
 </body>
 

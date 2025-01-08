@@ -22,6 +22,63 @@
             background-color: var(--deep-blue);
             color: var(--white);
         }
+
+        #company_vision {
+            background-clip: content-box;
+            background-color: var(--navy-blue);
+            display: flex;
+            flex-direction: row;
+            align-items: start;
+            gap: 80px;
+        }
+
+        #company_vision>.introduction {
+            width: 100%;
+            align-self: stretch;
+            display: flex;
+            flex-direction: column;
+            color: var(--white);
+            gap: 60px;
+            padding: 80px;
+        }
+
+        #company_vision>.introduction>h2 {
+            height: auto;
+        }
+
+        #company_vision>.introduction>p {
+            flex-grow: 1;
+        }
+
+        #company_vision>.picture {
+            transform: translate(-80px, 80px);
+        }
+
+        @media (max-width: 1200px) {
+            #company_vision {
+                flex-direction: column;
+                background-clip: border-box;
+                background-image: linear-gradient(to top, var(--light-grey) 360px, var(--navy-blue) 360px);
+            }
+
+            #company_vision>.introduction {
+                padding: 0;
+            }
+
+            #company_vision p {
+                height: auto;
+                margin-bottom: 120px;
+            }
+
+            #company_vision>.picture {
+                max-width: 354px;
+                transform: none;
+            }
+
+            #our_services section {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 
@@ -30,7 +87,17 @@
     <header>
         <h1>关于我们</h1>
     </header>
-    <main></main>
+    <main>
+        <article id="company_vision">
+            <div class="introduction">
+                <h2>公司愿景</h2>
+                <p>我们的愿景是成为全球汽车企业在欧洲市场的首选合作伙伴。借助我们本地化的团队、深厚的资源与经验，确保整车制造商和零部件供应商在欧洲成功落地与发展。我们致力于帮助企业顺利进入欧洲市场，提供全面的本地化服务，包括法律法规合规、市场拓展以及营销渠道建设，规避在进入欧洲市场时可能遇到的风险和挑战。通过我们的专业支持，我们希望为全球汽车行业在欧洲的可持续发展铺平道路。</p>
+            </div>
+            <div class="picture">
+                <img src="/assets/images/rowing.jpg" alt="公司愿景">
+            </div>
+        </article>
+    </main>
     <footer></footer>
 </body>
 

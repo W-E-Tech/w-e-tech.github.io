@@ -104,12 +104,12 @@
                 flex-direction: column;
             }
 
-            #about_us p {
+            #about_us>.introduction>p {
                 height: auto;
                 margin-bottom: 120px;
             }
 
-            #about_us .picture {
+            #about_us>.picture {
                 max-width: 354px;
             }
 
@@ -133,12 +133,11 @@
         <article id="about_us">
             <div class="introduction">
                 <h2>{{about_us}}</h2>
-                <p>{{start_about_us_text}}
-                </p>
-                <img src="/assets/images/logo.svg" alt="">
+                <p>{{start_about_us_text}}</p>
+                <img src="/assets/images/logo.svg" alt="Wattical Evaris Tech">
             </div>
             <div class="picture">
-                <img src="/assets/images/surfing.jpg" alt="">
+                <img src="/assets/images/surfing.jpg" alt="{{about_us}}">
             </div>
         </article>
         <article id="our_services" class="with-section-number">
