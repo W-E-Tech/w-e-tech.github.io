@@ -33,6 +33,7 @@ s/{{european_human_resources_services}}/欧洲人力资源服务/g
 s/{{european_human_resources_services_text}}/针对企业在欧洲的本地化运营需求，提供高管、中层管理人员以及各领域专家的招聘和人力资源支持，帮助企业快速组建并优化欧洲市场的团队。/g
 s/{{company_vision}}/公司愿景/g
 s/{{company_vision_text}}/我们的愿景是成为全球汽车企业在欧洲市场的首选合作伙伴。借助我们本地化的团队、深厚的资源与经验，确保整车制造商和零部件供应商在欧洲成功落地与发展。我们致力于帮助企业顺利进入欧洲市场，提供全面的本地化服务，包括法律法规合规、市场拓展以及营销渠道建设，规避在进入欧洲市场时可能遇到的风险和挑战。通过我们的专业支持，我们希望为全球汽车行业在欧洲的可持续发展铺平道路。/g
+s/{{our_expertise}}/我们的优势/g
 s/{{expert_localization_and_compliance_services}}/专业的本地化与合规服务/g
 s/{{expert_localization_and_compliance_services_text}}/我们的团队专注于为进入欧洲市场的汽车制造商提供定制化的本地化服务，确保全面的法律法规合规，帮助客户规避风险，顺利进入市场。/g
 s/{{deep_integration_of_local_resources}}/深入整合本地资源/g
