@@ -1,6 +1,9 @@
 .button {
     font-weight: bold;
     padding: 20px 100px;
+    box-shadow: var(--box-shadow-color) 10px -10px;
+    display: inline-block;
+    transform: translateY(10px);
 }
 
 .button:hover {
@@ -10,5 +13,5 @@
 .button.secondary {
     background-color: var(--white);
     color: var(--deep-blue);
-    box-shadow: var(--coral-red) 10px -10px;
+    --box-shadow-color: var(--coral-red);
 }
