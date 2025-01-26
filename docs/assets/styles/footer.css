@@ -37,7 +37,7 @@ footer .content a[href^="mailto:"] {
     white-space: nowrap;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1290px) {
     footer {
         padding: 60px 24px 195px;
     }

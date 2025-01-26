@@ -142,7 +142,7 @@ main>article h4 {
     margin-top: 1em;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1290px) {
     header {
         padding: 300px 24px 0;
     }

@@ -129,7 +129,7 @@ button.nav-item>span::after {
     display: none;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1290px) {
     nav * {
         -webkit-tap-highlight-color: transparent;
         outline: none;
