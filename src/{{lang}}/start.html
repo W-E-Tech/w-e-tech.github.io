@@ -45,6 +45,7 @@
             flex-direction: row;
             align-items: start;
             gap: 80px;
+            --title-color: currentColor;
         }
 
         #about_us>.introduction {
@@ -69,33 +70,22 @@
         #our_services {
             background: no-repeat top / cover url('/assets/images/article_background.png');
             background-color: var(--deep-blue);
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            gap: var(--gap);
+            --title-color: var(--white);
+        }
+
+        #our_services>.sections {
             --gap: 30px;
         }
 
-        #our_services h2 {
-            width: 100%;
-            color: var(--white);
-        }
-
-        #our_services h3 {
-            width: 100%;
-        }
-
-        #our_services section {
+        #our_services>.sections section {
             width: calc((100% - var(--gap)*2)/3);
         }
 
-        #our_services>section:first-of-type {
+        #our_services>.sections>section:first-of-type {
             width: 100%;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            row-gap: 60px;
-            column-gap: var(--gap);
+        }
+
+        #our_services>.sections>section:first-of-type>.sections {
             --gap: 150px;
         }
 
@@ -113,7 +103,7 @@
                 max-width: 354px;
             }
 
-            #our_services section {
+            #our_services>.sections section {
                 width: 100%;
             }
         }
@@ -140,35 +130,39 @@
                 <img src="/assets/images/surfing.jpg" alt="{{about_us}}">
             </div>
         </article>
-        <article id="our_services" class="with-section-number">
+        <article id="our_services">
             <h2>{{our_services}}</h2>
-            <section>
-                <h3>{{vehicle_localization_services}}</h3>
-                <section>
-                    <h4>{{localization_testing}}</h4>
-                    <p>{{localization_testing_text}}</p>
+            <div class="sections with-section-number">
+                <section class="grey">
+                    <h3>{{vehicle_localization_services}}</h3>
+                    <div class="sections">
+                        <section>
+                            <h4>{{localization_testing}}</h4>
+                            <p>{{localization_testing_text}}</p>
+                        </section>
+                        <section>
+                            <h4>{{legal_compliance_and_certification_support}}</h4>
+                            <p>{{legal_compliance_and_certification_support_text}}</p>
+                        </section>
+                        <section>
+                            <h4>{{market_issue_resolution_and_cost_optimization}}</h4>
+                            <p>{{market_issue_resolution_and_cost_optimization_text}}</p>
+                        </section>
+                    </div>
                 </section>
-                <section>
-                    <h4>{{legal_compliance_and_certification_support}}</h4>
-                    <p>{{legal_compliance_and_certification_support_text}}</p>
+                <section class="grey">
+                    <h3>{{integrated_services_for_parts_export}}</h3>
+                    <p>{{integrated_services_for_parts_export_text}}</p>
                 </section>
-                <section>
-                    <h4>{{market_issue_resolution_and_cost_optimization}}</h4>
-                    <p>{{market_issue_resolution_and_cost_optimization_text}}</p>
+                <section class="grey">
+                    <h3>{{testing_equipment_services}}</h3>
+                    <p>{{testing_equipment_services_text}}</p>
                 </section>
-            </section>
-            <section>
-                <h3>{{integrated_services_for_parts_export}}</h3>
-                <p>{{integrated_services_for_parts_export_text}}</p>
-            </section>
-            <section>
-                <h3>{{testing_equipment_services}}</h3>
-                <p>{{testing_equipment_services_text}}</p>
-            </section>
-            <section>
-                <h3>{{european_human_resources_services}}</h3>
-                <p>{{european_human_resources_services_text}}</p>
-            </section>
+                <section class="grey">
+                    <h3>{{european_human_resources_services}}</h3>
+                    <p>{{european_human_resources_services_text}}</p>
+                </section>
+            </div>
         </article>
     </main>
     <footer></footer>

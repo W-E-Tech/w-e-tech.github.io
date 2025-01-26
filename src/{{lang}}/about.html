@@ -54,6 +54,42 @@
             transform: translate(-80px, 80px);
         }
 
+        #our_expertise {
+            background-color: var(--light-grey);
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #our_expertise>.sections {
+            --gap: 30px;
+            align-items: flex-start;
+        }
+
+        #our_expertise>.sections>* {
+            width: 40%;
+
+        }
+
+        #our_expertise>.sections>section:nth-of-type(2) {
+            align-self: flex-end;
+        }
+
+        #our_expertise>.sections>section:nth-of-type(3) {
+            margin-left: auto;
+        }
+
+        #our_expertise>.sections>.sections>section {
+            width: 100%;
+        }
+
+        #our_expertise>.sections>.sections>section:nth-of-type(1) {
+            --nth: '04';
+        }
+
+        #our_expertise>.sections>.sections>section:nth-of-type(2) {
+            --nth: '05';
+        }
+
         @media (max-width: 1200px) {
             #company_vision {
                 flex-direction: column;
@@ -75,7 +111,7 @@
                 transform: none;
             }
 
-            #our_services section {
+            #our_expertise>.sections>* {
                 width: 100%;
             }
         }
@@ -95,6 +131,33 @@
             </div>
             <div class="picture">
                 <img src="/assets/images/rowing.jpg" alt="{{company_vision}}">
+            </div>
+        </article>
+        <article id="our_expertise" class="with-section-number">
+            <h2>{{our_expertise}}</h2>
+            <div class="sections with-section-number">
+                <section class="red">
+                    <h3>{{expert_localization_and_compliance_services}}</h3>
+                    <p>{{expert_localization_and_compliance_services_text}}</p>
+                </section>
+                <section class="navy-blue">
+                    <h3>{{deep_integration_of_local_resources}}</h3>
+                    <p>{{deep_integration_of_local_resources_text}}</p>
+                </section>
+                <section class="royal-blue">
+                    <h3>{{proven_experience_in_solving_technical_challenges}}</h3>
+                    <p>{{proven_experience_in_solving_technical_challenges_text}}</p>
+                </section>
+                <div class="sections with-section-number">
+                    <section class="fog-blue">
+                        <h3>{{multidisciplinary_expert_team}}</h3>
+                        <p>{{multidisciplinary_expert_team_text}}</p>
+                    </section>
+                    <section class="white">
+                        <h3>{{the_only_chinese_speaking_expert_team_in_europe}}</h3>
+                        <p>{{the_only_chinese_speaking_expert_team_in_europe_text}}</p>
+                    </section>
+                </div>
             </div>
         </article>
     </main>

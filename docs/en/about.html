@@ -54,6 +54,42 @@
             transform: translate(-80px, 80px);
         }
 
+        #our_expertise {
+            background-color: var(--light-grey);
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #our_expertise>.sections {
+            --gap: 30px;
+            align-items: flex-start;
+        }
+
+        #our_expertise>.sections>* {
+            width: 40%;
+
+        }
+
+        #our_expertise>.sections>section:nth-of-type(2) {
+            align-self: flex-end;
+        }
+
+        #our_expertise>.sections>section:nth-of-type(3) {
+            margin-left: auto;
+        }
+
+        #our_expertise>.sections>.sections>section {
+            width: 100%;
+        }
+
+        #our_expertise>.sections>.sections>section:nth-of-type(1) {
+            --nth: '04';
+        }
+
+        #our_expertise>.sections>.sections>section:nth-of-type(2) {
+            --nth: '05';
+        }
+
         @media (max-width: 1200px) {
             #company_vision {
                 flex-direction: column;
@@ -75,7 +111,7 @@
                 transform: none;
             }
 
-            #our_services section {
+            #our_expertise>.sections>* {
                 width: 100%;
             }
         }
@@ -95,6 +131,33 @@
             </div>
             <div class="picture">
                 <img src="/assets/images/rowing.jpg" alt="Company Vision">
+            </div>
+        </article>
+        <article id="our_expertise" class="with-section-number">
+            <h2>{{our_expertise}}</h2>
+            <div class="sections with-section-number">
+                <section class="red">
+                    <h3>Expert Localization and Compliance Services</h3>
+                    <p>Our team specializes in providing tailored localization services for global automotive manufacturers entering the European market. We ensure full regulatory compliance, helping clients navigate risks and achieve a smooth market entry.</p>
+                </section>
+                <section class="navy-blue">
+                    <h3>Deep Integration of Local Resources</h3>
+                    <p>We leverage extensive local resources and networks to provide comprehensive support for global automotive parts suppliers, from market entry to certification, helping them establish and grow their presence in the European market.</p>
+                </section>
+                <section class="royal-blue">
+                    <h3>Proven Experience in Solving Technical Challenges</h3>
+                    <p>We have a strong track record of addressing complex technical and regulatory challenges, with successful cases ranging from vehicle market launches to certification processes. Not only do we resolve technical issues, but we also help companies avoid unnecessary hurdles, ensuring efficient and effective use of resources. Our focus is on solving the real problems, saving costs while ensuring compliance and success.</p>
+                </section>
+                <div class="sections with-section-number">
+                    <section class="fog-blue">
+                        <h3>Multidisciplinary Expert Team</h3>
+                        <p>Our team consists of seasoned experts across various fields, including vehicle testing, certification, regulatory compliance, and environmental sustainability. This diverse expertise allows us to offer comprehensive solutions covering market entry and expansion.</p>
+                    </section>
+                    <section class="white">
+                        <h3>The Only Chinese-Speaking Expert Team in Europe</h3>
+                        <p>As the only expert team in Europe fully proficient in Chinese, we serve as a bridge for seamless communication between global manufacturers and European regulatory bodies, ensuring efficient problem resolution and smooth collaboration.</p>
+                    </section>
+                </div>
             </div>
         </article>
     </main>

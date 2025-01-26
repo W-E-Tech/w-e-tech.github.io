@@ -31,62 +31,114 @@ main>article h2 {
     font-weight: bold;
     display: flex;
     align-items: center;
-    height: 200px;
+    color: var(--title-color);
 }
 
-main>article>section:nth-of-type(1) {
+main>article h2+* {
+    margin-top: 60px;
+}
+
+main>article h2,
+main>article h3,
+main>article h4 {
+    width: 100%;
+}
+
+.sections {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
+
+.sections>section.grey {
+    background-color: var(--light-grey);
+    --number-color: var(--white);
+    color: var(--navy-blue);
+}
+
+.sections>section.red {
+    background-color: var(--coral-red);
+    --number-color: rgba(0, 6, 13, 0.3);
+    color: var(--white);
+}
+
+.sections>section.navy-blue {
+    background-color: var(--navy-blue);
+    --number-color: var(--deep-blue);
+    color: var(--light-grey);
+}
+
+.sections>section.royal-blue {
+    background-color: var(--royal-blue);
+    --number-color: rgba(28, 40, 61, 0.3);
+    color: var(--light-grey);
+}
+
+.sections>section.fog-blue {
+    background-color: var(--fog-blue);
+    --number-color: var(--white);
+    color: var(--deep-blue);
+}
+
+.sections>section.white {
+    background-color: var(--white);
+    --number-color: var(--light-grey);
+    color: var(--deep-blue);
+}
+
+.sections.with-section-number>section:nth-of-type(1) {
     --nth: '01'
 }
 
-main>article>section:nth-of-type(2) {
+.sections.with-section-number>section:nth-of-type(2) {
     --nth: '02'
 }
 
-main>article>section:nth-of-type(3) {
+.sections.with-section-number>section:nth-of-type(3) {
     --nth: '03'
 }
 
-main>article>section:nth-of-type(4) {
+.sections.with-section-number>section:nth-of-type(4) {
     --nth: '04'
 }
 
-main>article>section:nth-of-type(5) {
+.sections.with-section-number>section:nth-of-type(5) {
     --nth: '05'
 }
 
-main>article>section {
+.sections.with-section-number>section {
     padding: 100px 60px;
     position: relative;
-    background-color: var(--light-grey);
 }
 
-main>article>section>* {
+.sections.with-section-number>section>* {
     position: relative;
 }
 
-main>article.with-section-number>section::before {
+.sections.with-section-number>section::before {
     content: var(--nth);
     position: absolute;
     top: 0;
     left: 0;
     font-size: 160px;
-    color: var(--white);
+    color: var(--number-color);
 }
 
-main>article>section h3 {
+.sections>section h3 {
     font-size: 32px;
     font-weight: bold;
 }
 
-main>article>section h3+p {
-    margin-top: 100px;
-}
-
-main>article>section h4 {
+.sections>section h4 {
     font-weight: bold;
 }
 
-main>article>section h4+p {
+.sections>section h3+* {
+    margin-top: 60px;
+}
+
+.sections>section h4+* {
     margin-top: 1em;
 }
 

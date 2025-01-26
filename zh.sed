@@ -33,3 +33,13 @@ s/{{european_human_resources_services}}/欧洲人力资源服务/g
 s/{{european_human_resources_services_text}}/针对企业在欧洲的本地化运营需求，提供高管、中层管理人员以及各领域专家的招聘和人力资源支持，帮助企业快速组建并优化欧洲市场的团队。/g
 s/{{company_vision}}/公司愿景/g
 s/{{company_vision_text}}/我们的愿景是成为全球汽车企业在欧洲市场的首选合作伙伴。借助我们本地化的团队、深厚的资源与经验，确保整车制造商和零部件供应商在欧洲成功落地与发展。我们致力于帮助企业顺利进入欧洲市场，提供全面的本地化服务，包括法律法规合规、市场拓展以及营销渠道建设，规避在进入欧洲市场时可能遇到的风险和挑战。通过我们的专业支持，我们希望为全球汽车行业在欧洲的可持续发展铺平道路。/g
+s/{{expert_localization_and_compliance_services}}/专业的本地化与合规服务/g
+s/{{expert_localization_and_compliance_services_text}}/我们的团队专注于为进入欧洲市场的汽车制造商提供定制化的本地化服务，确保全面的法律法规合规，帮助客户规避风险，顺利进入市场。/g
+s/{{deep_integration_of_local_resources}}/深入整合本地资源/g
+s/{{deep_integration_of_local_resources_text}}/我们充分利用丰富的本地资源和网络，为汽车零部件供应商提供全方位支持，从市场准入到认证，助力他们在欧洲市场建立并强化业务。/g
+s/{{proven_experience_in_solving_technical_challenges}}/技术问题解决的成功经验/g
+s/{{proven_experience_in_solving_technical_challenges_text}}/我们具备处理复杂技术和法规问题的丰富经验，拥有多个成功案例，涵盖车型上市和认证工作。我们不仅帮助企业解决技术难题，还通过减少不必要的弯路，确保资金投入的精准与高效。我们专注于解决真正需要解决的问题，确保合规和成功的同时，为企业节省开支。/g
+s/{{multidisciplinary_expert_team}}/多学科专家团队/g
+s/{{multidisciplinary_expert_team_text}}/我们的团队由各领域的资深专家组成，涵盖车辆测试、认证、法规合规、环境可持续发展等多个专业领域。这种多元化的技能组合使我们能够提供覆盖市场准入与扩展的全面解决方案。/g
+s/{{the_only_chinese_speaking_expert_team_in_europe}}/唯一的欧洲汉语专家团队/g
+s/{{the_only_chinese_speaking_expert_team_in_europe_text}}/作为欧洲唯一具备全面汉语能力的专家团队，我们在中欧之间架起了高效的沟通桥梁，确保制造商与欧洲监管机构之间的顺畅对接，快速解决问题。/g

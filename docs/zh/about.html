@@ -54,6 +54,42 @@
             transform: translate(-80px, 80px);
         }
 
+        #our_expertise {
+            background-color: var(--light-grey);
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #our_expertise>.sections {
+            --gap: 30px;
+            align-items: flex-start;
+        }
+
+        #our_expertise>.sections>* {
+            width: 40%;
+
+        }
+
+        #our_expertise>.sections>section:nth-of-type(2) {
+            align-self: flex-end;
+        }
+
+        #our_expertise>.sections>section:nth-of-type(3) {
+            margin-left: auto;
+        }
+
+        #our_expertise>.sections>.sections>section {
+            width: 100%;
+        }
+
+        #our_expertise>.sections>.sections>section:nth-of-type(1) {
+            --nth: '04';
+        }
+
+        #our_expertise>.sections>.sections>section:nth-of-type(2) {
+            --nth: '05';
+        }
+
         @media (max-width: 1200px) {
             #company_vision {
                 flex-direction: column;
@@ -75,7 +111,7 @@
                 transform: none;
             }
 
-            #our_services section {
+            #our_expertise>.sections>* {
                 width: 100%;
             }
         }
@@ -95,6 +131,33 @@
             </div>
             <div class="picture">
                 <img src="/assets/images/rowing.jpg" alt="公司愿景">
+            </div>
+        </article>
+        <article id="our_expertise" class="with-section-number">
+            <h2>{{our_expertise}}</h2>
+            <div class="sections with-section-number">
+                <section class="red">
+                    <h3>专业的本地化与合规服务</h3>
+                    <p>我们的团队专注于为进入欧洲市场的汽车制造商提供定制化的本地化服务，确保全面的法律法规合规，帮助客户规避风险，顺利进入市场。</p>
+                </section>
+                <section class="navy-blue">
+                    <h3>深入整合本地资源</h3>
+                    <p>我们充分利用丰富的本地资源和网络，为汽车零部件供应商提供全方位支持，从市场准入到认证，助力他们在欧洲市场建立并强化业务。</p>
+                </section>
+                <section class="royal-blue">
+                    <h3>技术问题解决的成功经验</h3>
+                    <p>我们具备处理复杂技术和法规问题的丰富经验，拥有多个成功案例，涵盖车型上市和认证工作。我们不仅帮助企业解决技术难题，还通过减少不必要的弯路，确保资金投入的精准与高效。我们专注于解决真正需要解决的问题，确保合规和成功的同时，为企业节省开支。</p>
+                </section>
+                <div class="sections with-section-number">
+                    <section class="fog-blue">
+                        <h3>多学科专家团队</h3>
+                        <p>我们的团队由各领域的资深专家组成，涵盖车辆测试、认证、法规合规、环境可持续发展等多个专业领域。这种多元化的技能组合使我们能够提供覆盖市场准入与扩展的全面解决方案。</p>
+                    </section>
+                    <section class="white">
+                        <h3>唯一的欧洲汉语专家团队</h3>
+                        <p>作为欧洲唯一具备全面汉语能力的专家团队，我们在中欧之间架起了高效的沟通桥梁，确保制造商与欧洲监管机构之间的顺畅对接，快速解决问题。</p>
+                    </section>
+                </div>
             </div>
         </article>
     </main>
