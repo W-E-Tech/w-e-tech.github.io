@@ -44,3 +44,30 @@ s/{{multidisciplinary_expert_team}}/Multidisciplinary Expert Team/g
 s/{{multidisciplinary_expert_team_text}}/Our team consists of seasoned experts across various fields, including vehicle testing, certification, regulatory compliance, and environmental sustainability. This diverse expertise allows us to offer comprehensive solutions covering market entry and expansion./g
 s/{{the_only_chinese_speaking_expert_team_in_europe}}/The Only Chinese-Speaking Expert Team in Europe/g
 s/{{the_only_chinese_speaking_expert_team_in_europe_text}}/As the only expert team in Europe fully proficient in Chinese, we serve as a bridge for seamless communication between global manufacturers and European regulatory bodies, ensuring efficient problem resolution and smooth collaboration./g
+s/{{vehicle_localization_services_in_europe}}/Vehicle Localization Services in Europe/g
+s/{{core_services}}/Core Services/g
+s/{{core_services_text}}/We provide comprehensive vehicle localization services for global automotive manufacturers, ensuring successful entry and stable operation in the European market. With extensive local experience and expertise, we offer full-process support from testing and validation to market issue resolution, helping clients navigate risks and achieve a smooth market entry./g
+s/{{localization_validation}}/Localization Validation/g
+s/{{full_vehicle_testing_and_validation}}/Full Vehicle Testing and Validation/g
+s/{{full_vehicle_testing_and_validation_text}}/We offer comprehensive testing services covering 7 key testing modules and over 200 individual test items, including powertrain field tests and thermal capacity tests for safety systems. Our team has completed systematic testing for over 30 test vehicles, identifying and resolving more than 280 issues, ensuring compliance with European market requirements and technical standards./g
+s/{{eu_specific_system_testing}}/EU-specific System Testing/g
+s/{{eu_specific_system_testing_text}}/We conduct specialized testing for core systems, such as powertrain and safety, to ensure all components meet European regulatory and market requirements, thus guaranteeing localized performance and safety./g
+s/{{legal_compliance_and_certification_support}}/Legal Compliance and Certification Support/g
+s/{{regulatory_interpretation_and_application}}/Regulatory Interpretation and Application/g
+s/{{regulatory_interpretation_and_application_text}}/We are well-versed in EU regulations and those of other key markets, having successfully assisted in the certification of four vehicle models across eight markets. We provide support from interpreting regulations to applying them, helping clients complete vehicle entry certifications and regulatory filings./g
+s/{{certification_process_management}}/Certification Process Management/g
+s/{{certification_process_management_text}}/From initial qualification assessments to final vehicle registration, we manage the entire certification process, ensuring compliance with all European market requirements, thereby preventing delays in market entry due to compliance issues./g
+s/{{market_issue_resolution_and_cost_optimization}}/Market Issue Resolution and Cost Optimization/g
+s/{{one_stop_market_issue_service}}/One-Stop Market Issue Service/g
+s/{{one_stop_market_issue_service_text}}/We offer a full lifecycle service to address market-related issues, helping automotive manufacturers swiftly respond to and resolve market challenges, from issue identification and on-site analysis to solution implementation./g
+s/{{public_relations_and_crisis_management}}/Public Relations and Crisis Management/g
+s/{{public_relations_and_crisis_management_text}}/We work closely with certification bodies, regulatory agencies, and dealers to quickly develop and implement solutions when market issues arise. Through effective PR strategies, we minimize the impact of negative events./g
+s/{{cost_optimization}}/Cost Optimization/g
+s/{{cost_optimization_text}}/By identifying issues early and implementing effective corrective measures, we help clients avoid unnecessary expenditures while ensuring compliance and market success./g
+s/{{our_strengths}}/Our Strengths/g
+s/{{extensive_experience}}/Extensive Experience/g
+s/{{extensive_experience_text}}/We have successfully handled vehicle launches and certifications for multiple models in the European market, gaining deep expertise in localization and market issue resolution./g
+s/{{integration_of_local_resources}}/Integration of Local Resources/g
+s/{{integration_of_local_resources_text}}/We maintain strong partnerships with key certification bodies, testing providers, and regulatory agencies in Europe, allowing us to efficiently advance projects and ensure their successful completion./g
+s/{{cost_efficiency}}/Cost Efficiency/g
+s/{{cost_efficiency_text}}/We focus on the critical details of each project, helping clients optimize cost management while ensuring compliance, making sure that every dollar is used effectively./g
