@@ -163,7 +163,9 @@ main>article h4 {
 
 @media (max-width: 1290px) {
     header {
-        padding: 300px 24px 0;
+        padding: 210px 24px 0;
+        height: auto;
+        min-height: 874px;
     }
 
     header::after {
