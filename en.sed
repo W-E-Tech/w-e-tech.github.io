@@ -143,3 +143,11 @@ s/{{customized_recruitment_solutions}}/Customized Recruitment Solutions/g
 s/{{customized_recruitment_solutions_text}}/Based on specific company requirements, we offer tailored recruitment and staffing solutions, ensuring businesses have the right talent in key positions./g
 s/{{european_human_resources_services_comprehensive_support}}/Comprehensive Support/g
 s/{{european_human_resources_services_comprehensive_support_text}}/Beyond recruitment, we provide full-cycle support from team formation and management to training, ensuring that new teams can quickly deliver value to the business./g
+s/{{join_us}}/Join Us/g
+s/{{join_us_in_helping_global_companies_expand_into_the_european_market}}/Join Us in Helping Global Companies Expand into the European Market/g
+s/{{join_us_in_helping_global_companies_expand_into_the_european_market_text}}/We are looking for passionate professionals who are eager to help international companies succeed in the European market. If you have expertise in localization, regulations, compliance, and more, and are enthusiastic about supporting global businesses entering Europe, we invite you to join our team./g
+s/{{here_you_will_have_the_opportunity_to}}/Here, you will have the opportunity to/g
+s/{{here_you_will_have_the_opportunity_to_text_1}}/Be deeply involved in the entire process of helping global companies enter the European market, providing comprehensive support from market entry to compliance certification./g
+s/{{here_you_will_have_the_opportunity_to_text_2}}/Leverage your expertise in the local market to help businesses successfully establish themselves while avoiding common market pitfalls./g
+s/{{here_you_will_have_the_opportunity_to_text_3}}/Collaborate with a diverse and experienced team, growing together in a fast-paced, evolving industry./g
+s/{{career_contact_us}}/Whether you are an experienced industry expert or an emerging talent passionate about international business expansion, we welcome you to connect with us and explore potential collaboration opportunities. Join us in contributing to the success of global companies in Europe./g

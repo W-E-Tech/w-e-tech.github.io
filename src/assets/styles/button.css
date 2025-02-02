@@ -10,6 +10,12 @@
     cursor: pointer;
 }
 
+.button.primary {
+    background-color: var(--coral-red);
+    color: var(--white);
+    --box-shadow-color: var(--deep-blue);
+}
+
 .button.secondary {
     background-color: var(--white);
     color: var(--deep-blue);

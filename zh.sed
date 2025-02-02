@@ -143,3 +143,11 @@ s/{{customized_recruitment_solutions}}/定制化招聘服务/g
 s/{{customized_recruitment_solutions_text}}/根据企业的具体需求，我们提供定制化的人才招聘与配置方案，确保企业在关键岗位拥有最合适的人选。/g
 s/{{european_human_resources_services_comprehensive_support}}/全流程支持/g
 s/{{european_human_resources_services_comprehensive_support_text}}/我们不仅协助企业完成招聘，还提供团队组建、管理和培训等全流程支持，确保新团队能够快速为企业创造价值。/g
+s/{{join_us}}/加入我们/g
+s/{{join_us_in_helping_global_companies_expand_into_the_european_market}}/加入我们，<br>共同助力<br>全球企业拓展<br>欧洲市场/g
+s/{{join_us_in_helping_global_companies_expand_into_the_european_market_text}}/我们正在寻找对全球企业国际化充满热情、并希望在欧洲市场大展拳脚的专业人士加入我们的团队。如果你拥有本地化、法规、合规等方面的丰富经验，并愿意为全球企业进入欧洲市场提供支持，我们诚邀你加入我们。/g
+s/{{here_you_will_have_the_opportunity_to}}/在这里，你将有机会/g
+s/{{here_you_will_have_the_opportunity_to_text_1}}/深度参与企业进入欧洲市场的全过程，提供从市场准入到合规认证的全面支持。/g
+s/{{here_you_will_have_the_opportunity_to_text_2}}/利用你对欧洲市场的深入了解，帮助企业顺利落地并规避常见的市场风险。/g
+s/{{here_you_will_have_the_opportunity_to_text_3}}/与一支多元化、经验丰富的团队合作，在快速发展的国际业务中共同成长。/g
+s/{{career_contact_us}}/无论你是经验丰富的行业专家，还是对跨国业务拓展充满热情的新锐人才，只要你认同我们的使命，我们都非常欢迎你与我们联系，探索合作的可能性。加入我们，一起为全球企业的欧洲发展贡献力量。/g

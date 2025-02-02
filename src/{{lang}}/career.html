@@ -17,13 +17,143 @@
     <script type="module" src="/scripts.js"></script>
     <title>Wattical Evaris Tech GmbH</title>
     <style>
+        header {
+            background: no-repeat center / cover url('/assets/images/career_header_background.jpg');
+            background-color: var(--deep-blue);
+            color: var(--white);
+        }
+
+        #join_us {
+            position: relative;
+            padding-bottom: 260px;
+            overflow: hidden;
+        }
+
+        #join_us>section {
+            position: relative;
+            background-color: var(--navy-blue);
+            color: var(--white);
+            width: 72%;
+            padding: 80px 20% 100px 80px;
+        }
+
+        #join_us>section>img {
+            position: absolute;
+            bottom: 60px;
+            right: -40%;
+            width: 60%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        #join_us>img {
+            position: absolute;
+            left: 0;
+            bottom: -35px;
+        }
+
+        #join_us>div {
+            position: relative;
+            margin-top: 232px;
+        }
+
+        #join_us>div>h2 {
+            font-size: 32px;
+        }
+
+        #join_us .sections {
+            --gap: 30px;
+        }
+
+        #join_us .sections>section>img {
+            margin-top: -60px;
+            margin-left: -60px;
+            margin-bottom: 67px;
+            width: calc(100% + 120px);
+            max-width: none;
+        }
+
+        #contact_us {
+            background-color: var(--navy-blue);
+            color: var(--white);
+            display: flex;
+            flex-direction: column;
+        }
+
+        #contact_us>.button {
+            margin-top: 60px;
+            align-self: flex-end;
+        }
+
+        @media (max-width: 1290px) {
+            #join_us {
+                background: linear-gradient(to bottom, var(--navy-blue) calc(1500px - 65vw), var(--white) calc(1500px - 65vw));
+                padding-bottom: 120px;
+            }
+
+            #join_us>section {
+                padding: 0;
+                width: 100%;
+            }
+
+            #join_us>section>img {
+                width: 100%;
+                left: 0;
+                height: 500px;
+                bottom: -560px;
+            }
+
+            #join_us>img {
+                display: none;
+            }
+
+            #join_us>div {
+                margin-top: 670px;
+                background: var(--white);
+            }
+
+            #join_us .sections>section {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 
 <body>
     <nav class="light"></nav>
-    <header></header>
-    <main></main>
+    <header>
+        <h1>{{join_us}}</h1>
+    </header>
+    <main>
+        <article id="join_us">
+            <section>
+                <h2>{{join_us_in_helping_global_companies_expand_into_the_european_market}}</h2>
+                <p></p>
+                <img src="/assets/images/night_driving.jpg" alt="{{join_us}}">
+            </section>
+            <img src="/assets/images/career_article_background.png">
+            <div>
+                <h2>{{here_you_will_have_the_opportunity_to}}</h2>
+                <div class="sections with-padding three-in-row">
+                    <section class="grey">
+                        <img src="/assets/images/interviewing1.jpg">
+                        <p>{{here_you_will_have_the_opportunity_to_text_1}}</p>
+                    </section>
+                    <section class="grey"><img src="/assets/images/interviewing2.jpg">
+                        <p>{{here_you_will_have_the_opportunity_to_text_2}}</p>
+                    </section>
+                    <section class="grey"><img src="/assets/images/interviewing3.jpg">
+                        <p>{{here_you_will_have_the_opportunity_to_text_3}}</p>
+                    </section>
+                </div>
+            </div>
+        </article>
+        <article id="contact_us">
+            <h2>{{contact_us}}</h2>
+            <p>{{career_contact_us}}</p>
+            <a class="button primary" href="mailto:info@wattical-evaris-tech.com">{{contact_us}}</a>
+        </article>
+    </main>
     <footer></footer>
 </body>
 

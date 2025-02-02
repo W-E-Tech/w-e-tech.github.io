@@ -17,13 +17,143 @@
     <script type="module" src="/scripts.js"></script>
     <title>Wattical Evaris Tech GmbH</title>
     <style>
+        header {
+            background: no-repeat center / cover url('/assets/images/career_header_background.jpg');
+            background-color: var(--deep-blue);
+            color: var(--white);
+        }
+
+        #join_us {
+            position: relative;
+            padding-bottom: 260px;
+            overflow: hidden;
+        }
+
+        #join_us>section {
+            position: relative;
+            background-color: var(--navy-blue);
+            color: var(--white);
+            width: 72%;
+            padding: 80px 20% 100px 80px;
+        }
+
+        #join_us>section>img {
+            position: absolute;
+            bottom: 60px;
+            right: -40%;
+            width: 60%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        #join_us>img {
+            position: absolute;
+            left: 0;
+            bottom: -35px;
+        }
+
+        #join_us>div {
+            position: relative;
+            margin-top: 232px;
+        }
+
+        #join_us>div>h2 {
+            font-size: 32px;
+        }
+
+        #join_us .sections {
+            --gap: 30px;
+        }
+
+        #join_us .sections>section>img {
+            margin-top: -60px;
+            margin-left: -60px;
+            margin-bottom: 67px;
+            width: calc(100% + 120px);
+            max-width: none;
+        }
+
+        #contact_us {
+            background-color: var(--navy-blue);
+            color: var(--white);
+            display: flex;
+            flex-direction: column;
+        }
+
+        #contact_us>.button {
+            margin-top: 60px;
+            align-self: flex-end;
+        }
+
+        @media (max-width: 1290px) {
+            #join_us {
+                background: linear-gradient(to bottom, var(--navy-blue) calc(1500px - 65vw), var(--white) calc(1500px - 65vw));
+                padding-bottom: 120px;
+            }
+
+            #join_us>section {
+                padding: 0;
+                width: 100%;
+            }
+
+            #join_us>section>img {
+                width: 100%;
+                left: 0;
+                height: 500px;
+                bottom: -560px;
+            }
+
+            #join_us>img {
+                display: none;
+            }
+
+            #join_us>div {
+                margin-top: 670px;
+                background: var(--white);
+            }
+
+            #join_us .sections>section {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 
 <body>
     <nav class="light"></nav>
-    <header></header>
-    <main></main>
+    <header>
+        <h1>加入我们</h1>
+    </header>
+    <main>
+        <article id="join_us">
+            <section>
+                <h2>加入我们，<br>共同助力<br>全球企业拓展<br>欧洲市场</h2>
+                <p></p>
+                <img src="/assets/images/night_driving.jpg" alt="加入我们">
+            </section>
+            <img src="/assets/images/career_article_background.png">
+            <div>
+                <h2>在这里，你将有机会</h2>
+                <div class="sections with-padding three-in-row">
+                    <section class="grey">
+                        <img src="/assets/images/interviewing1.jpg">
+                        <p>深度参与企业进入欧洲市场的全过程，提供从市场准入到合规认证的全面支持。</p>
+                    </section>
+                    <section class="grey"><img src="/assets/images/interviewing2.jpg">
+                        <p>利用你对欧洲市场的深入了解，帮助企业顺利落地并规避常见的市场风险。</p>
+                    </section>
+                    <section class="grey"><img src="/assets/images/interviewing3.jpg">
+                        <p>与一支多元化、经验丰富的团队合作，在快速发展的国际业务中共同成长。</p>
+                    </section>
+                </div>
+            </div>
+        </article>
+        <article id="contact_us">
+            <h2>联系我们</h2>
+            <p>无论你是经验丰富的行业专家，还是对跨国业务拓展充满热情的新锐人才，只要你认同我们的使命，我们都非常欢迎你与我们联系，探索合作的可能性。加入我们，一起为全球企业的欧洲发展贡献力量。</p>
+            <a class="button primary" href="mailto:info@wattical-evaris-tech.com">联系我们</a>
+        </article>
+    </main>
     <footer></footer>
 </body>
 
