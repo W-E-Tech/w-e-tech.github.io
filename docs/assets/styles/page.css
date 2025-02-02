@@ -130,7 +130,7 @@ main>article h4 {
     color: var(--number-color);
 }
 
-.sections.sections>section.full-row {
+.sections>section.full-row {
     width: 100%;
 }
 

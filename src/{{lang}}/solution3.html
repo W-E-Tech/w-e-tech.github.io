@@ -14,16 +14,108 @@
     <link rel="icon" href="favicon_dark.ico" type="image/x-icon" media="(prefers-color-scheme: dark)">
     <link rel="manifest" href="/assets/favicon/site.webmanifest">
     <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/assets/styles/solutions.css">
     <script type="module" src="/scripts.js"></script>
     <title>Wattical Evaris Tech GmbH</title>
     <style>
+        header {
+            background: no-repeat center / cover url('/assets/images/solution3_header_background.jpg');
+            background-color: var(--deep-blue);
+            color: var(--white);
+        }
+
+        #our_strengths>.sections>section:nth-of-type(1) {
+            top: 0;
+            right: 0;
+        }
+
+        #our_strengths>.sections>section:nth-of-type(2) {
+            top: 47.3%;
+            right: 17.1%;
+        }
+
+        #our_strengths>.sections>section:nth-of-type(3) {
+            bottom: 0;
+            left: 0;
+        }
+
+        #our_strengths>.sections>img {
+            top: 10.2%;
+            left: 10.7%;
+        }
     </style>
 </head>
 
 <body>
     <nav class="light"></nav>
-    <header></header>
-    <main></main>
+    <header>
+        <h1>{{testing_equipment_services}}</h1>
+    </header>
+    <main>
+        <article id="core_services">
+            <h2>{{core_services}}</h2>
+            <p>{{testing_equipment_services_core_services_text}}</p>
+            <div class="sections">
+                <section class="full-row">
+                    <h3>{{testing_equipment_selection_and_procurement}}</h3>
+                    <div class="sections with-padding two-in-row">
+                        <section class="grey">
+                            <h4>{{professional_equipment_selection}}</h4>
+                            <p>{{professional_equipment_selection_text}}</p>
+                        </section>
+                        <section class="grey">
+                            <h4>{{procurement_support}}</h4>
+                            <p>{{procurement_support_text}}</p>
+                        </section>
+                    </div>
+                </section>
+                <section class="full-row">
+                    <h3>{{promotion_and_introduction_of_equipment_in_europe}}</h3>
+                    <div class="sections with-padding two-in-row">
+                        <section class="grey">
+                            <h4>{{introducing_domestic_equipment_to_the_european_market}}</h4>
+                            <p>{{introducing_domestic_equipment_to_the_european_market_text}}</p>
+                        </section>
+                        <section class="grey">
+                            <h4>{{market_promotion_of_equipment}}</h4>
+                            <p>{{market_promotion_of_equipment_text}}</p>
+                        </section>
+                    </div>
+                </section>
+                <section class="full-row">
+                    <h3>{{maintenance_and_upgrading_of_testing_equipment}}</h3>
+                    <div class="sections with-padding two-in-row">
+                        <section class="grey">
+                            <h4>{{equipment_maintenance_services}}</h4>
+                            <p>{{equipment_maintenance_services_text}}</p>
+                        </section>
+                        <section class="grey">
+                            <h4>{{upgrades_and_updates}}</h4>
+                            <p>{{upgrades_and_updates_text}}</p>
+                        </section>
+                    </div>
+                </section>
+            </div>
+        </article>
+        <article id="our_strengths">
+            <h2>{{our_strengths}}</h2>
+            <div class="sections with-section-number">
+                <img src="/assets/images/suspension.jpg" alt="{{our_strengths}}">
+                <section class="red">
+                    <h3>{{extensive_equipment_resources}}</h3>
+                    <p>{{extensive_equipment_resources_text}}</p>
+                </section>
+                <section class="navy-blue">
+                    <h3>{{market_promotion_expertise}}</h3>
+                    <p>{{market_promotion_expertise_text}}</p>
+                </section>
+                <section class="royal-blue">
+                    <h3>{{comprehensive_support}}</h3>
+                    <p>{{comprehensive_support_text}}</p>
+                </section>
+            </div>
+        </article>
+    </main>
     <footer></footer>
 </body>
 
