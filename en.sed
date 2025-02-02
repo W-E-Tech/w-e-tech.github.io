@@ -118,5 +118,28 @@ s/{{extensive_equipment_resources}}/Extensive Equipment Resources/g
 s/{{extensive_equipment_resources_text}}/We maintain long-term partnerships with leading European testing equipment suppliers, offering a wide selection of equipment to meet diverse testing requirements./g
 s/{{market_promotion_expertise}}/Market Promotion Expertise/g
 s/{{market_promotion_expertise_text}}/With rich experience in market promotion, we help domestic equipment suppliers quickly penetrate the European market and achieve localized brand promotion./g
-s/{{comprehensive_support}}/Comprehensive Support/g
-s/{{comprehensive_support_text}}/In addition to equipment procurement and introduction, we provide full-process services, including installation, calibration, training, maintenance, and upgrades, ensuring a seamless experience for clients./g
+s/{{testing_equipment_services_comprehensive_support}}/Comprehensive Support/g
+s/{{testing_equipment_services_comprehensive_support_text}}/In addition to equipment procurement and introduction, we provide full-process services, including installation, calibration, training, maintenance, and upgrades, ensuring a seamless experience for clients./g
+s/{{european_human_resources_services}}/European Human Resources Services/g
+s/{{european_human_resources_services_core_services_text}}/Our European human resources services are designed to assist global companies in establishing localized operations in the European market. We specialize in recruiting and staffing senior executives, mid-level managers, and experts across various fields, ensuring successful market entry and long-term development for businesses. With our extensive local resources and expertise, companies can quickly build and optimize teams to succeed in the highly competitive European market./g
+s/{{executive_and_mid_level_management_recruitment}}/Executive and Mid-Level Management Recruitment/g
+s/{{targeted_recruitment}}/Targeted Recruitment/g
+s/{{targeted_recruitment_text}}/Based on a company’s strategic needs in the European market, we provide customized recruitment services for executives and mid-level managers, ensuring leadership teams have deep industry knowledge and local market experience./g
+s/{{background_checks_and_selection}}/Background Checks and Selection/g
+s/{{background_checks_and_selection_text}}/We offer comprehensive background checks to ensure that candidates' qualifications and experience meet the company’s requirements, selecting the most suitable managerial talent for the role./g
+s/{{expert_staffing_across_various_fields}}/Expert Staffing across Various Fields/g
+s/{{technical_expert_recruitment}}/Technical Expert Recruitment/g
+s/{{technical_expert_recruitment_text}}/We assist companies in hiring technical experts in the European market, covering areas such as vehicle testing, certification, regulatory compliance, and marketing, ensuring professional support across all operational areas./g
+s/{{consultant_team_building}}/Consultant Team Building/g
+s/{{consultant_team_building_text}}/We help businesses establish local consulting teams, providing advisory services in areas such as regulations, market analysis, and technical support, to enable informed strategic decisions in the market./g
+s/{{team_deployment_and_management}}/Team Deployment and Management/g
+s/{{localized_team_formation}}/Localized Team Formation/g
+s/{{localized_team_formation_text}}/We assist companies in rapidly building localized teams in Europe, from sales to after-sales services, ensuring teams can quickly integrate and adapt to the local market environment./g
+s/{{team_management_and_training}}/Team Management and Training/g
+s/{{team_management_and_training_text}}/For newly formed teams, we provide structured management and training support to improve efficiency and ensure smooth business operations./g
+s/{{extensive_local_resources}}/Extensive Local Resources/g
+s/{{extensive_local_resources_text}}/We have a vast network of local talent in Europe, enabling us to quickly find high-caliber candidates and professional experts that meet the needs of our clients./g
+s/{{customized_recruitment_solutions}}/Customized Recruitment Solutions/g
+s/{{customized_recruitment_solutions_text}}/Based on specific company requirements, we offer tailored recruitment and staffing solutions, ensuring businesses have the right talent in key positions./g
+s/{{european_human_resources_services_comprehensive_support}}/Comprehensive Support/g
+s/{{european_human_resources_services_comprehensive_support_text}}/Beyond recruitment, we provide full-cycle support from team formation and management to training, ensuring that new teams can quickly deliver value to the business./g

@@ -14,16 +14,108 @@
     <link rel="icon" href="favicon_dark.ico" type="image/x-icon" media="(prefers-color-scheme: dark)">
     <link rel="manifest" href="/assets/favicon/site.webmanifest">
     <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/assets/styles/solutions.css">
     <script type="module" src="/scripts.js"></script>
     <title>Wattical Evaris Tech GmbH</title>
     <style>
+        header {
+            background: no-repeat center / cover url('/assets/images/solution4_header_background.jpg');
+            background-color: var(--deep-blue);
+            color: var(--white);
+        }
+
+        #our_strengths>.sections>section:nth-of-type(1) {
+            top: 0;
+            left: 0;
+        }
+
+        #our_strengths>.sections>section:nth-of-type(2) {
+            top: 9%;
+            right: 0;
+        }
+
+        #our_strengths>.sections>section:nth-of-type(3) {
+            bottom: 0;
+            left: 30%;
+        }
+
+        #our_strengths>.sections>img {
+            bottom: 12%;
+            left: 6%;
+        }
     </style>
 </head>
 
 <body>
     <nav class="light"></nav>
-    <header></header>
-    <main></main>
+    <header>
+        <h1>{{european_human_resources_services}}</h1>
+    </header>
+    <main>
+        <article id="core_services">
+            <h2>{{core_services}}</h2>
+            <p>{{european_human_resources_services_core_services_text}}</p>
+            <div class="sections">
+                <section class="full-row">
+                    <h3>{{executive_and_mid_level_management_recruitment}}</h3>
+                    <div class="sections with-padding two-in-row">
+                        <section class="grey">
+                            <h4>{{targeted_recruitment}}</h4>
+                            <p>{{targeted_recruitment_text}}</p>
+                        </section>
+                        <section class="grey">
+                            <h4>{{background_checks_and_selection}}</h4>
+                            <p>{{background_checks_and_selection_text}}</p>
+                        </section>
+                    </div>
+                </section>
+                <section class="full-row">
+                    <h3>{{expert_staffing_across_various_fields}}</h3>
+                    <div class="sections with-padding two-in-row">
+                        <section class="grey">
+                            <h4>{{technical_expert_recruitment}}</h4>
+                            <p>{{technical_expert_recruitment_text}}</p>
+                        </section>
+                        <section class="grey">
+                            <h4>{{consultant_team_building}}</h4>
+                            <p>{{consultant_team_building_text}}</p>
+                        </section>
+                    </div>
+                </section>
+                <section class="full-row">
+                    <h3>{{team_deployment_and_management}}</h3>
+                    <div class="sections with-padding two-in-row">
+                        <section class="grey">
+                            <h4>{{localized_team_formation}}</h4>
+                            <p>{{localized_team_formation_text}}</p>
+                        </section>
+                        <section class="grey">
+                            <h4>{{team_management_and_training}}</h4>
+                            <p>{{team_management_and_training_text}}</p>
+                        </section>
+                    </div>
+                </section>
+            </div>
+        </article>
+        <article id="our_strengths">
+            <h2>{{our_strengths}}</h2>
+            <div class="sections with-section-number">
+                <img src="/assets/images/recruiting.jpg" alt="{{our_strengths}}">
+                <section class="red">
+                    <h3>{{extensive_local_resources}}</h3>
+                    <p>{{extensive_local_resources_text}}</p>
+                </section>
+                <section class="navy-blue">
+                    <h3>{{customized_recruitment_solutions}}</h3>
+                    <p>{{customized_recruitment_solutions_text}}</p>
+                </section>
+                <section class="royal-blue">
+                    <h3>{{european_human_resources_services_comprehensive_support}}</h3>
+                    <p>{{european_human_resources_services_comprehensive_support_text}}</p>
+                </section>
+            </div>
+        </article>
+    </main>
     <footer></footer>
 </body>
 
