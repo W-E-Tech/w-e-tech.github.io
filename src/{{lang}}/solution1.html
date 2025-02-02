@@ -14,6 +14,7 @@
     <link rel="icon" href="favicon_dark.ico" type="image/x-icon" media="(prefers-color-scheme: dark)">
     <link rel="manifest" href="/assets/favicon/site.webmanifest">
     <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/assets/styles/solutions.css">
     <script type="module" src="/scripts.js"></script>
     <title>Wattical Evaris Tech GmbH</title>
     <style>
@@ -21,33 +22,6 @@
             background: no-repeat center / cover url('/assets/images/solution1_header_background.jpg');
             background-color: var(--deep-blue);
             color: var(--white);
-        }
-
-        #core_services .sections.two-in-row,
-        #core_services .sections.three-in-row {
-            --gap: 30px;
-        }
-
-        #core_services>.sections {
-            margin-top: 140px;
-            --gap: 80px;
-        }
-
-        #our_strengths {
-            background-color: var(--light-grey);
-            color: var(--deep-blue)
-        }
-
-        #our_strengths>.sections {
-            margin-top: 60px;
-            position: relative;
-            height: calc(2210px - 70vw);
-            min-height: 950px;
-        }
-
-        #our_strengths>.sections>* {
-            position: absolute;
-            width: 40%;
         }
 
         #our_strengths>.sections>section:nth-of-type(1) {
@@ -71,30 +45,6 @@
             object-fit: cover;
             top: 10%;
             left: 46.5%;
-        }
-
-        @media (max-width: 1290px) {
-            #core_services section {
-                width: 100%;
-            }
-
-            #our_strengths>.sections {
-                height: auto;
-                --gap: 30px;
-            }
-
-            #our_strengths>.sections>section:nth-of-type(n) {
-                position: relative;
-                width: 100%;
-                left: auto;
-                right: auto;
-                top: auto;
-                bottom: auto;
-            }
-
-            #our_strengths>.sections>img {
-                display: none;
-            }
         }
     </style>
 </head>
