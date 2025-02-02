@@ -130,17 +130,17 @@ main>article h4 {
     color: var(--number-color);
 }
 
-.sections.sections.in-row>section.full-row {
+.sections.sections>section.full-row {
     width: 100%;
 }
 
-.sections.in-row>:nth-child(1 of section:not(.full-row)):nth-last-child(2 of section:not(.full-row)),
-.sections.in-row>:nth-child(1 of section:not(.full-row)):nth-last-child(2 of section:not(.full-row))~section:not(.full-row) {
+.sections.two-in-row>:nth-child(1 of section:not(.full-row)),
+.sections.two-in-row>:nth-child(1 of section:not(.full-row))~section:not(.full-row) {
     width: calc((100% - var(--gap))/2);
 }
 
-.sections.in-row>:nth-child(1 of section:not(.full-row)):nth-last-child(3 of section:not(.full-row)),
-.sections.in-row>:nth-child(1 of section:not(.full-row)):nth-last-child(3 of section:not(.full-row))~section:not(.full-row) {
+.sections.three-in-row>:nth-child(1 of section:not(.full-row)),
+.sections.three-in-row>:nth-child(1 of section:not(.full-row))~section:not(.full-row) {
     width: calc((100% - var(--gap)*2)/3);
 }
 
