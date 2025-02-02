@@ -14,16 +14,117 @@
     <link rel="icon" href="favicon_dark.ico" type="image/x-icon" media="(prefers-color-scheme: dark)">
     <link rel="manifest" href="/assets/favicon/site.webmanifest">
     <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/assets/styles/solutions.css">
     <script type="module" src="/scripts.js"></script>
     <title>Wattical Evaris Tech GmbH</title>
     <style>
+        header {
+            background: no-repeat center / cover url('/assets/images/solution2_header_background.jpg');
+            background-color: var(--deep-blue);
+            color: var(--white);
+        }
+
+        #our_strengths>.sections>section:nth-of-type(1) {
+            top: 0;
+            left: 8.6%;
+        }
+
+        #our_strengths>.sections>section:nth-of-type(2) {
+            top: 4.9%;
+            right: 8.5%;
+        }
+
+        #our_strengths>.sections>section:nth-of-type(3) {
+            bottom: 6.8%;
+            left: 17%;
+        }
+
+        #our_strengths>.sections>section:nth-of-type(4) {
+            bottom: 6.8%;
+            right: 0;
+        }
+
+        #our_strengths>.sections>img {
+            bottom: 0;
+            left: 0;
+            width: auto;
+        }
     </style>
 </head>
 
 <body>
     <nav class="light"></nav>
-    <header></header>
-    <main></main>
+    <header>
+        <h1>{{comprehensive_parts_export_services}}</h1>
+    </header>
+    <main>
+        <article id="core_services">
+            <h2>{{core_services}}</h2>
+            <p>{{comprehensive_parts_export_services_core_services_text}}</p>
+            <div class="sections">
+                <section>
+                    <h3>{{commercial_product_feasibility_analysis}}</h3>
+                    <div class="sections with-padding three-in-row">
+                        <section class="grey">
+                            <h4>{{market_analysis_and_product_planning}}</h4>
+                            <p>{{market_analysis_and_product_planning_text}}</p>
+                        </section>
+                        <section class="grey">
+                            <h4>{{european_standards_and_technical_feasibility}}</h4>
+                            <p>{{european_standards_and_technical_feasibility_text}}</p>
+                        </section>
+                        <section class="grey">
+                            <h4>{{business_plan_development}}</h4>
+                            <p>{{business_plan_development_text}}</p>
+                        </section>
+                    </div>
+                </section>
+                <section>
+                    <h3>{{comprehensive_market_entry_support}}</h3>
+                    <div class="sections with-padding two-in-row">
+                        <section class="grey">
+                            <h4>{{product_entry}}</h4>
+                            <p>{{product_entry_text}}</p>
+                        </section>
+                        <section class="grey">
+                            <h4>{{business_establishment}}</h4>
+                            <p>{{business_establishment_text}}</p>
+                        </section>
+                        <section class="grey">
+                            <h4>{{sales_channel_development}}</h4>
+                            <p>{{sales_channel_development_text}}</p>
+                        </section>
+                        <section class="grey">
+                            <h4>{{team_localization}}</h4>
+                            <p>{{team_localization_text}}</p>
+                        </section>
+                    </div>
+                </section>
+            </div>
+        </article>
+        <article id="our_strengths">
+            <h2>{{our_strengths}}</h2>
+            <div class="sections with-section-number">
+                <img src="/assets/images/cables.jpg" alt="{{our_strengths}}">
+                <section class="red">
+                    <h3>{{specialized_market_database}}</h3>
+                    <p>{{specialized_market_database_text}}</p>
+                </section>
+                <section class="navy-blue">
+                    <h3>{{expert_team_support}}</h3>
+                    <p>{{expert_team_support_text}}</p>
+                </section>
+                <section class="royal-blue">
+                    <h3>{{exclusive_sales_channels}}</h3>
+                    <p>{{exclusive_sales_channels_text}}</p>
+                </section>
+                <section class="fog-blue">
+                    <h3>{{localized_management}}</h3>
+                    <p>{{localized_management_text}}</p>
+                </section>
+            </div>
+        </article>
+    </main>
     <footer></footer>
 </body>
 
