@@ -44,7 +44,7 @@ s/{{multidisciplinary_expert_team}}/多学科专家团队/g
 s/{{multidisciplinary_expert_team_text}}/我们的团队由各领域的资深专家组成，涵盖车辆测试、认证、法规合规、环境可持续发展等多个专业领域。这种多元化的技能组合使我们能够提供覆盖市场准入与扩展的全面解决方案。/g
 s/{{the_only_chinese_speaking_expert_team_in_europe}}/唯一的欧洲汉语专家团队/g
 s/{{the_only_chinese_speaking_expert_team_in_europe_text}}/作为欧洲唯一具备全面汉语能力的专家团队，我们在中欧之间架起了高效的沟通桥梁，确保制造商与欧洲监管机构之间的顺畅对接，快速解决问题。/g
-s/{{vehicle_localization_services_in_europe}}/整车欧洲本地化/g
+s/{{vehicle_localization_services_in_europe}}/整车欧洲<br>本地化/g
 s/{{core_services}}/核心服务/g
 s/{{core_services_text}}/我们为整车制造商提供全面的整车欧洲本地化服务，确保车辆能够成功进入并在欧洲市场稳定运营。凭借丰富的本地经验和专业知识，我们提供从测试验证到市场问题解决的全流程支持，帮助客户规避风险，实现顺利落地。/g
 s/{{localization_validation}}/本地化验证/g
