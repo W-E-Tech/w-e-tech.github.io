@@ -77,14 +77,6 @@
             --gap: 30px;
         }
 
-        #our_services>.sections section {
-            width: calc((100% - var(--gap)*2)/3);
-        }
-
-        #our_services>.sections>section:first-of-type {
-            width: 100%;
-        }
-
         #our_services>.sections>section:first-of-type>.sections {
             --gap: 150px;
         }
@@ -132,10 +124,10 @@
         </article>
         <article id="our_services">
             <h2>{{our_services}}</h2>
-            <div class="sections with-section-number">
-                <section class="grey">
+            <div class="sections with-section-number in-row">
+                <section class="grey full-row">
                     <h3>{{vehicle_localization_services}}</h3>
-                    <div class="sections">
+                    <div class="sections in-row">
                         <section>
                             <h4>{{localization_testing}}</h4>
                             <p>{{localization_testing_text}}</p>

@@ -107,6 +107,10 @@ main>article h4 {
     --nth: '05'
 }
 
+.sections.with-padding>section {
+    padding: 60px;
+}
+
 .sections.with-section-number>section {
     padding: 100px 60px;
     position: relative;
@@ -122,7 +126,22 @@ main>article h4 {
     top: 0;
     left: 0;
     font-size: 160px;
+    font-weight: bold;
     color: var(--number-color);
+}
+
+.sections.sections.in-row>section.full-row {
+    width: 100%;
+}
+
+.sections.in-row>:nth-child(1 of section:not(.full-row)):nth-last-child(2 of section:not(.full-row)),
+.sections.in-row>:nth-child(1 of section:not(.full-row)):nth-last-child(2 of section:not(.full-row))~section:not(.full-row) {
+    width: calc((100% - var(--gap))/2);
+}
+
+.sections.in-row>:nth-child(1 of section:not(.full-row)):nth-last-child(3 of section:not(.full-row)),
+.sections.in-row>:nth-child(1 of section:not(.full-row)):nth-last-child(3 of section:not(.full-row))~section:not(.full-row) {
+    width: calc((100% - var(--gap)*2)/3);
 }
 
 .sections>section h3 {
