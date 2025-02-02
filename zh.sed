@@ -46,7 +46,7 @@ s/{{the_only_chinese_speaking_expert_team_in_europe}}/唯一的欧洲汉语专�
 s/{{the_only_chinese_speaking_expert_team_in_europe_text}}/作为欧洲唯一具备全面汉语能力的专家团队，我们在中欧之间架起了高效的沟通桥梁，确保制造商与欧洲监管机构之间的顺畅对接，快速解决问题。/g
 s/{{vehicle_localization_services_in_europe}}/整车欧洲<br>本地化/g
 s/{{core_services}}/核心服务/g
-s/{{core_services_text}}/我们为整车制造商提供全面的整车欧洲本地化服务，确保车辆能够成功进入并在欧洲市场稳定运营。凭借丰富的本地经验和专业知识，我们提供从测试验证到市场问题解决的全流程支持，帮助客户规避风险，实现顺利落地。/g
+s/{{vehicle_localization_services_in_europe_core_services_text}}/我们为整车制造商提供全面的整车欧洲本地化服务，确保车辆能够成功进入并在欧洲市场稳定运营。凭借丰富的本地经验和专业知识，我们提供从测试验证到市场问题解决的全流程支持，帮助客户规避风险，实现顺利落地。/g
 s/{{localization_validation}}/本地化验证/g
 s/{{full_vehicle_testing_and_validation}}/整车测试与验证/g
 s/{{full_vehicle_testing_and_validation_text}}/我们提供全面的整车检验和验证服务，包括7个测试模块，覆盖动力系统场地测试、安全系统热容量测试等200余项测试项目。我们的团队已完成30余辆试验车的系统性测试，发现并解决了280多个问题，确保车辆符合欧洲市场的使用需求和技术标准。/g
