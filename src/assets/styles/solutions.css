@@ -23,6 +23,9 @@
 
 #our_strengths>.sections>* {
     position: absolute;
+}
+
+#our_strengths>.sections>section {
     width: 40%;
 }
 
