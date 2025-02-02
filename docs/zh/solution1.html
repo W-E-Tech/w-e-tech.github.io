@@ -17,13 +17,193 @@
     <script type="module" src="/scripts.js"></script>
     <title>Wattical Evaris Tech GmbH</title>
     <style>
+        header {
+            background: no-repeat center / cover url('/assets/images/solution1_header_background.jpg');
+            background-color: var(--deep-blue);
+            color: var(--white);
+        }
+
+        #core_services .sections.in-row {
+            --gap: 30px;
+        }
+
+        #core_services>.sections {
+            margin-top: 140px;
+            --gap: 80px;
+        }
+
+        #our_strengths {
+            background-color: var(--light-grey);
+            color: var(--deep-blue)
+        }
+
+        #our_strengths>.sections {
+            margin-top: 60px;
+            position: relative;
+            height: calc(2210px - 70vw);
+            min-height: 950px;
+        }
+
+        #our_strengths>.sections>* {
+            position: absolute;
+            width: 40%;
+        }
+
+        #our_strengths>.sections>section:nth-of-type(1) {
+            top: 0;
+            left: 8.8%;
+        }
+
+        #our_strengths>.sections>section:nth-of-type(2) {
+            top: 41.6%;
+            right: 0;
+        }
+
+        #our_strengths>.sections>section:nth-of-type(3) {
+            bottom: 0;
+            left: 0;
+        }
+
+        #our_strengths>.sections>img {
+            height: calc(1300px - 42vw);
+            min-height: 557px;
+            object-fit: cover;
+            top: 10%;
+            left: 46.5%;
+        }
+
+        @media (max-width: 1290px) {
+            #core_services section {
+                width: 100%;
+            }
+
+            #our_strengths>.sections {
+                height: auto;
+                --gap: 30px;
+            }
+
+            #our_strengths>.sections>section:nth-of-type(n) {
+                position: relative;
+                width: 100%;
+                left: auto;
+                right: auto;
+                top: auto;
+                bottom: auto;
+            }
+
+            #our_strengths>.sections>img {
+                display: none;
+            }
+        }
     </style>
 </head>
 
 <body>
     <nav class="light"></nav>
-    <header></header>
-    <main></main>
+    <header>
+        <h1>Vehicle Localization Services in Europe</h1>
+    </header>
+    <main>
+        <article id="core_services">
+            <h2>Core Services</h2>
+            <p>We provide comprehensive vehicle localization services for global automotive manufacturers, ensuring
+                successful entry and stable operation in the European market. With extensive local experience and
+                expertise, we offer full-process support from testing and validation to market issue resolution, helping
+                clients navigate risks and achieve a smooth market entry.</p>
+            <div class="sections">
+                <section>
+                    <h3>Localization Validation</h3>
+                    <div class="sections with-padding in-row">
+                        <section class="grey">
+                            <h4>Full Vehicle Testing and Validation</h4>
+                            <p>We offer comprehensive testing services covering 7 key testing modules and over 200
+                                individual
+                                test items, including powertrain field tests and thermal capacity tests for safety
+                                systems.
+                                Our
+                                team has completed systematic testing for over 30 test vehicles, identifying and
+                                resolving
+                                more
+                                than 280 issues, ensuring compliance with European market requirements and technical
+                                standards.
+                            </p>
+                        </section>
+                        <section class="grey">
+                            <h4>EU-specific System Testing</h4>
+                            <p>We conduct specialized testing for core systems, such as powertrain and safety, to ensure
+                                all
+                                components meet European regulatory and market requirements, thus guaranteeing localized
+                                performance and safety.</p>
+                        </section>
+                    </div>
+                </section>
+                <section>
+                    <h3>Legal Compliance and Certification Support</h3>
+                    <div class="sections with-padding in-row">
+                        <section class="grey">
+                            <h4>Regulatory Interpretation and Application</h4>
+                            <p>We are well-versed in EU regulations and those of other key markets, having successfully
+                                assisted in the certification of four vehicle models across eight markets. We provide
+                                support from interpreting regulations to applying them, helping clients complete vehicle
+                                entry certifications and regulatory filings.
+                            </p>
+                        </section>
+                        <section class="grey">
+                            <h4>Certification Process Management</h4>
+                            <p>From initial qualification assessments to final vehicle registration, we manage the
+                                entire certification process, ensuring compliance with all European market requirements,
+                                thereby preventing delays in market entry due to compliance issues.</p>
+                        </section>
+                    </div>
+                </section>
+                <section>
+                    <h3>Market Issue Resolution and Cost Optimization</h3>
+                    <div class="sections with-padding in-row">
+                        <section class="grey">
+                            <h4>One-Stop Market Issue Service</h4>
+                            <p>We offer a full lifecycle service to address market-related issues, helping automotive
+                                manufacturers swiftly respond to and resolve market challenges, from issue
+                                identification and on-site analysis to solution implementation.
+                            </p>
+                        </section>
+                        <section class="grey">
+                            <h4>Public Relations and Crisis Management</h4>
+                            <p>We work closely with certification bodies, regulatory agencies, and dealers to quickly
+                                develop and implement solutions when market issues arise. Through effective PR
+                                strategies, we minimize the impact of negative events.</p>
+                        </section>
+                        <section class="grey">
+                            <h4>Cost Optimization</h4>
+                            <p>By identifying issues early and implementing effective corrective measures, we help
+                                clients avoid unnecessary expenditures while ensuring compliance and market success.</p>
+                        </section>
+                    </div>
+                </section>
+            </div>
+        </article>
+        <article id="our_strengths">
+            <h2>Our Strengths</h2>
+            <div class="sections with-section-number">
+                <section class="red">
+                    <h3>Extensive Experience</h3>
+                    <p>We have successfully handled vehicle launches and certifications for multiple models in the
+                        European market, gaining deep expertise in localization and market issue resolution.</p>
+                </section>
+                <img src="/assets/images/driving.jpg" alt="Our Strengths">
+                <section class="navy-blue">
+                    <h3>Integration of Local Resources</h3>
+                    <p>We maintain strong partnerships with key certification bodies, testing providers, and regulatory
+                        agencies in Europe, allowing us to efficiently advance projects and ensure their successful
+                        completion.</p>
+                </section>
+                <section class="royal-blue">
+                    <h3>Cost Efficiency</h3>
+                    <p>We focus on the critical details of each project, helping clients optimize cost management while
+                        ensuring compliance, making sure that every dollar is used effectively.</p>
+                </section>
+            </div>
+        </article>
+    </main>
     <footer></footer>
 </body>
 
