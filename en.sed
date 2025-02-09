@@ -151,3 +151,6 @@ s/{{here_you_will_have_the_opportunity_to_text_1}}/Be deeply involved in the ent
 s/{{here_you_will_have_the_opportunity_to_text_2}}/Leverage your expertise in the local market to help businesses successfully establish themselves while avoiding common market pitfalls./g
 s/{{here_you_will_have_the_opportunity_to_text_3}}/Collaborate with a diverse and experienced team, growing together in a fast-paced, evolving industry./g
 s/{{career_contact_us}}/Whether you are an experienced industry expert or an emerging talent passionate about international business expansion, we welcome you to connect with us and explore potential collaboration opportunities. Join us in contributing to the success of global companies in Europe./g
+s/{{get_in_touch}}/Get in<br>Touch/g
+s/{{office_location}}/Office Location/g
+s/{{office_location_text}}/Wattical Evaris Tech GmbH<br>Heinrich-Lanz-Allee 4<br>60437 Frankfurt am Main<br>Germany/g

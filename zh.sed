@@ -151,3 +151,6 @@ s/{{here_you_will_have_the_opportunity_to_text_1}}/深度参与企业进入欧�
 s/{{here_you_will_have_the_opportunity_to_text_2}}/利用你对欧洲市场的深入了解，帮助企业顺利落地并规避常见的市场风险。/g
 s/{{here_you_will_have_the_opportunity_to_text_3}}/与一支多元化、经验丰富的团队合作，在快速发展的国际业务中共同成长。/g
 s/{{career_contact_us}}/无论你是经验丰富的行业专家，还是对跨国业务拓展充满热情的新锐人才，只要你认同我们的使命，我们都非常欢迎你与我们联系，探索合作的可能性。加入我们，一起为全球企业的欧洲发展贡献力量。/g
+s/{{get_in_touch}}/联系我们/g
+s/{{office_location}}/公司地址/g
+s/{{office_location_text}}/Wattical Evaris Tech GmbH<br>Heinrich-Lanz-Allee 4<br>60437 美因河畔法兰克福<br>德国/g
