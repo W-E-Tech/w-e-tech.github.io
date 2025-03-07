@@ -32,7 +32,10 @@
         const pageName = window.location.pathname.match(/\/(\w+)\.html$/)[1];
         if (pageName !== 'start') {
             const navItemSelector = '#nav_item_' + (pageName.startsWith('solution') ? 'solutions' : pageName);
-            document.querySelector(navItemSelector).classList.add('current-nav-item');
+            const navItem = document.querySelector(navItemSelector)
+            if (navItem !== null) {
+                navItem.classList.add('current-nav-item');
+            }
         }
 
         document.querySelectorAll('#nav_item_languages li a').forEach(function (anchorNode) {
